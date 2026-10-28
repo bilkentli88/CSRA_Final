@@ -1,6 +1,6 @@
 # CSRA: source reports under factual conflict
 
-Reproducibility repository for **Source Reports Under Factual Conflict: Do Answering Models Have a Predictive Advantage?**, by **Aykut T. Altay**. This package is matched to the **V10 Neurocomputing working manuscript**. The manuscript is not represented as accepted or published.
+Reproducibility repository for **Source Reports Under Factual Conflict: Do Answering Models Have a Predictive Advantage?**. This package is matched to the **working manuscript**. The manuscript is not represented as accepted or published.
 
 ## Reproduce the article
 
