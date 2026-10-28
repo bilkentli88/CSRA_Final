@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "date": "2026-10-28",
+  "repository_package": "R8",
+  "release_version": "0.11.2",
+  "manuscript_revision": "V8 KAIS",
+  "current_checks": {
+    "paper_route": "PASSED",
+    "tables_rebuilt": 22,
+    "displayed_numeric_entries_checked": 598,
+    "maximum_displayed_numeric_difference": 0,
+    "figures_rebuilt": 6,
+    "scientific_files_byte_identical_to_R7": 343
+  },
+  "change": "Three verified KAIS citations added in Related Work; source/PDF binding updated.",
+  "prior_verification": "provenance/prior_releases/R7_RELEASE_CHECKS.json and R6_RELEASE_CHECKS.json",
+  "new_model_inference": false,
+  "new_statistical_analysis": false
+}

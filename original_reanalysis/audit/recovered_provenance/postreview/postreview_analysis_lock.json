@@ -1,0 +1,13 @@
+{
+  "alternate_wording_ids_sha256": "680d9b47e88773e2a8aa3cd125a38d5fb1559e004d004374786c3b88ba113a7e",
+  "analysis_bundle_sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+  "analysis_relation_map_sha256": "86d809a0a7c24701ee9ea7bb45e48c7ec0a83a49d919e7e627b2c77fa3f32a78",
+  "empty_result_shells_sha256": "334ec5bb50972e4d23b537691a22dc531d4403268ecaca8739c83c560ac2e3a7",
+  "fold_assignments_sha256": "0cc6fdabfec7446ad1f3329147f36f5f325919ce9b33df26552ea90b0e34560f",
+  "protocol_id": "CSRA-0.8",
+  "review_seal_sha256": "e7a83d7034a175de000ead1c900c4016576fa827ca1596d713f647b678cb8a72",
+  "sealed_review_sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+  "selected_items": 100,
+  "selected_items_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98",
+  "status": "POSTREVIEW_ANALYSIS_DESIGN_LOCKED_BEFORE_ANSWERS"
+}

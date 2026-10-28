@@ -1,0 +1,63 @@
+{
+  "protocol_id": "CSRA-FRESH40-20261020",
+  "status": "FRESH40_DEVELOPMENT_QUALIFICATION",
+  "seed": 20261020,
+  "target_models": [
+    "granite",
+    "phi",
+    "qwen"
+  ],
+  "reporter_models": [
+    "granite",
+    "phi",
+    "qwen",
+    "mistral"
+  ],
+  "held_out_target": "mistral",
+  "strengths": [
+    "SKEPTICAL",
+    "PROVISIONAL",
+    "BARE"
+  ],
+  "cues": [
+    "SELF_PRESENTED",
+    "OTHER_PRESENTED"
+  ],
+  "conditions": [
+    "NO_DOC",
+    "P_SKEPTICAL",
+    "P_PROVISIONAL",
+    "P_BARE",
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE",
+    "I_PROVISIONAL"
+  ],
+  "max_prompt_tokens": 512,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "text_alpha_grid": [
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "decoder_alpha": 1.0,
+  "shared_cue_for_both_reports": true,
+  "initial_batch_size": 8,
+  "fallback_batch_sizes": [
+    4,
+    2,
+    1
+  ],
+  "human_re_review_completed": "40 user-submitted approvals; independence not verified",
+  "fresh_item_execution_allowed": true,
+  "external_registration_required": false,
+  "input_provenance": {
+    "old100_items_sha256": "26f06e2e5130de6a1af8e048a076789b3d964f35015f59e3ad9c1067fb1c313e",
+    "old100_factual_re_review_verified": false,
+    "fresh_review": "inputs/review_audit.json"
+  },
+  "bootstrap_draws": 10000,
+  "practical_screen_threshold": 0.01
+}

@@ -1,0 +1,40 @@
+{
+  "status": "PASSED",
+  "date": "2026-10-28",
+  "release_version": "0.11.0",
+  "repository_package": "R6",
+  "manuscript_revision": "V6 KAIS",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "matplotlib": "3.10.8"
+  },
+  "tests_completed": {
+    "default_paper_route_from_fresh_zip_extraction": true,
+    "all_22_tables_and_598_numeric_entries": true,
+    "six_regenerated_figures_visually_reviewed": true,
+    "all_89280_later_raw_jobs_prompt_identities_and_aggregations": true,
+    "earlier_98_numeric_checks": true,
+    "original_48_pooled_and_new_target_factorial_readouts": true,
+    "frozen_policy_prediction_replay_5040_values": true,
+    "development_only_posthoc_refit_2880_rows_48_contrasts": true,
+    "changed_byte_failure_and_stale_status_guard": true
+  },
+  "evidence_preservation": {
+    "scientific_files_byte_identical_to_R5": 343,
+    "original_and_returned_study_identities_checked": 237
+  },
+  "not_executed_for_R6": [
+    "New GPU/model inference",
+    "Historical-environment full original bootstrap refits",
+    "Full 10000-draw primary factorial predictive Ridge refit",
+    "Full nested development refit",
+    "GitHub Actions on the remote service",
+    "Remote repository publication"
+  ],
+  "scope": "Prepared and locally validated repository. Fast paper route uses archived original refits and primary factorial bootstrap draws where documented; complete refitting commands are supplied separately. Missing original individual NF4 scoring/candidate/screening records cannot be reconstructed."
+}

@@ -1,0 +1,69 @@
+{
+  "release": "0.9.1-revision",
+  "packaged_date": "2026-10-21",
+  "sources": [
+    {
+      "stage": "submitted_repository",
+      "filename": "CSRA-8000 (1).zip",
+      "sha256": "d6139becd389d28f8c68b31ca01c0508c860754592400a7142d425846a1ff264",
+      "bytes": 878620,
+      "included_under": "original_release"
+    },
+    {
+      "stage": "author_refined_V1",
+      "filename": "CSRA_Article_V1.zip",
+      "sha256": "38bda8a65ec7eb57270d2ee87657366e13e99999655bf1f0795e2f6759ea95d1",
+      "bytes": 2302563,
+      "included_under": "original_reanalysis; original_reanalysis/audit"
+    },
+    {
+      "stage": "factorial_experiment",
+      "filename": "CSRA_Study2_Exploratory_results.zip",
+      "sha256": "8287fed9b52d545958427ea03991e6f2f6c6db9bbf090daf4b9d39edbdcfc7c0",
+      "bytes": 3995221,
+      "included_under": "studies/factorial/run1"
+    },
+    {
+      "stage": "FP32_development",
+      "filename": "CSRA_Development_results.zip",
+      "sha256": "eed652c87d05af6a1c9a8284c8584797282ecef656324582e5e5c2c9e23562cf",
+      "bytes": 7893537,
+      "included_under": "studies/development/run1"
+    },
+    {
+      "stage": "Fresh40",
+      "filename": "run1_CSRA_Fresh40_results.zip",
+      "sha256": "e5ca11444d32acea1aa26d174878c7b9883cd53fbc6ed4acf373e78c7d814ddd",
+      "bytes": 9905559,
+      "included_under": "studies/fresh40/run1"
+    },
+    {
+      "stage": "V1_based_R3_manuscript",
+      "filename": "CSRA_V1_Strengthened_Overleaf_R3.zip",
+      "sha256": "59b258e0a40cea4444189746f1ccd340f8b89359f885ac22648a0f687b264524",
+      "bytes": 4638106,
+      "included_under": "manuscript_support"
+    }
+  ],
+  "secondary_development_output": {
+    "location": "studies/development/secondary_refit/gradient_boosting",
+    "origin": "Earlier CPU refit of the supplied frozen development code, not a returned GPU run or a new collection."
+  },
+  "transformation_notes": [
+    "Original 46-file release preserved byte for byte.",
+    "Frozen study sources, inputs, locks, raw scores, and saved outputs copied without scientific edits.",
+    "Python caches and operating-system metadata excluded.",
+    "Original revision scripts relocated without source edits.",
+    "New manuscript checker changed only to resolve the release paths and write checks outside archived inputs.",
+    "Supplementary manuscript table and figure snapshots are presentation artifacts, not new experimental observations.",
+    "R4 adds an author-confirmed Fresh40 reviewer-alias clarification without modifying any pre-existing scientific records or frozen files."
+  ],
+  "previous_repository_release": {
+    "version": "0.9.0-revision",
+    "filename": "CSRA_Revised_Repository_R3.zip",
+    "sha256": "96fce035be5692fc0917060fd7092e3ccf80135c1cc60b3331ba8a5f9e30ff29",
+    "bytes": 25512057,
+    "prior_inventory": "provenance/prior_releases/R3_SHA256SUMS.txt",
+    "prior_validation": "provenance/prior_releases/R3_VALIDATION.json"
+  }
+}

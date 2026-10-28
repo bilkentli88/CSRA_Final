@@ -1,0 +1,274 @@
+{
+  "study": "CSRA v0.8 R4/A2",
+  "audit_date": "2026-10-15",
+  "selected_common_items": 100,
+  "models": [
+    "qwen",
+    "granite",
+    "phi"
+  ],
+  "unique_answer_triples": 57,
+  "alignment_rows": 1800,
+  "predictive_rows": 900,
+  "bootstrap_replicates": 2000,
+  "all_available_manifest_files_match": true,
+  "available_manifest_files_checked": 45,
+  "postreview_lock_SHA256": "5212466e65902c8b4ca28d21c31af17e8cf93f8846f843b886d62a32e1fd4703",
+  "execution_runner_expected_SHA256": "92e7c26fd9f7a0782b309c419d9ad2b69c8fa5e84d1677a32cee77b54edb9bd2",
+  "postreview_lock_matches_execution_runner": false,
+  "reconstruction": {
+    "qwen_CIE_max_abs_error": 1.0658141036401503e-14,
+    "qwen_VSA_max_abs_error": 7.105427357601002e-15,
+    "granite_CIE_max_abs_error": 7.105427357601002e-15,
+    "granite_VSA_max_abs_error": 3.552713678800501e-15,
+    "phi_CIE_max_abs_error": 7.105427357601002e-15,
+    "phi_VSA_max_abs_error": 3.552713678800501e-15,
+    "stored_alignment_CIE_max_abs_error": 3.552713678800501e-15,
+    "stored_alignment_VSA_max_abs_error": 3.552713678800501e-15
+  },
+  "implementation_validation": {
+    "point_max_abs_error": 4.440892098500626e-16,
+    "bootstrap_max_abs_error": 6.492744709929443e-16,
+    "bootstrap_draws_checked_against_author": 3,
+    "sealed_primary_CI_max_abs_error": 1.2533377113932431e-16,
+    "sealed_alignment_point_and_CI_max_abs_error": 3.885780586188048e-15
+  },
+  "environment": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.2",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "statsmodels": "0.14.6"
+  },
+  "limits": [
+    "No model scoring rerun; this audit starts from released aggregate scores.",
+    "Individual label-permutation scores, the full 600-candidate pool and raw source snapshot, screening outputs, activation record, final R4/A2 amendment documents, and external timing evidence remain unavailable. The sealed 240-row review and final-selection reconstruction are now verified.",
+    "All additional analyses are exploratory, following peer review.",
+    "Fixed original normalizations and folds are retained in bootstrap resamples.",
+    "The original alignment bootstrap is reproduced via its algebraically equivalent paired-difference regression, rather than repeated mixed-model optimization.",
+    "Recorded review reasons and content identity are verified; factual correctness, reviewer identity and independence, and chronology between review copies are not independently established."
+  ],
+  "recovered_lock_lineage": {
+    "answer_package_SHA256": "38e7d7b4d9edabe4317c1da031c2091039794c4a6034c10c06b2114105d40e45",
+    "package_checksum_files_verified": 16,
+    "metadata_lock_file": "CSRA_v08_POSTREVIEW_ANALYSIS_LOCK_R4_A2.json",
+    "metadata_lock_SHA256": "5212466e65902c8b4ca28d21c31af17e8cf93f8846f843b886d62a32e1fd4703",
+    "canonical_lock_file": "postreview/postreview_analysis_lock.json",
+    "canonical_lock_SHA256": "92e7c26fd9f7a0782b309c419d9ad2b69c8fa5e84d1677a32cee77b54edb9bd2",
+    "checks": {
+      "metadata_matches_review_release": true,
+      "canonical_matches_execution_runner": true,
+      "completion_binds_metadata": true,
+      "completion_binds_canonical": true,
+      "selected_items_match_review_release": true,
+      "review_seal_binding_matches": true,
+      "canonical_binding_alternate_wording_item_ids.json": true,
+      "canonical_binding_analysis_relation_map.json": true,
+      "canonical_binding_empty_result_shells.json": true,
+      "canonical_binding_fold_assignments.json": true,
+      "canonical_binding_final_common_items.csv": true,
+      "all_six_fold_maps_match_frozen_rules": true
+    },
+    "interpretation": "The review release contains the expanded design-metadata lock. The execution runner references a separate compact canonical lock. The recovered technical-completion record explicitly links both documents, and all checked bindings match.",
+    "timing_limit": "The recovered files explain document identity and internal lineage; they do not independently establish an external pre-outcome timestamp.",
+    "scientific_result_change": false
+  },
+  "postreview_lock_mismatch_explained": true,
+  "recovered_preactivation_assets": {
+    "package_SHA256": "c1979c385c294501872904168af7a3a99d43178eaf373ab269bb0bafac3c5894",
+    "execution_commitments": {
+      "step2/prompts/csra_v08_prompt_bundle.json": {
+        "sha256": "1c392ee6b2c396fcaee029411d3a428f8364223bd2e6f90f8c0b7db7ec922f09",
+        "matches_execution_commitment": true
+      },
+      "step2/CSRA_v08_PROMPT_TEMPLATE_BUNDLE_FROZEN.zip": {
+        "sha256": "c2f09968a3112952558081c086acc17043ee5d2b3d36f481b19b8796808c61f9",
+        "matches_execution_commitment": true
+      },
+      "step2/CSRA_v08_ANALYSIS_NOTEBOOK_FROZEN.zip": {
+        "sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+        "matches_execution_commitment": true
+      },
+      "step2/inputs/csra_v05_fictional_controls.jsonl": {
+        "sha256": "84677b428c921cb46429b80f7071f10874621b115ce8037f668a4f56c899e679",
+        "matches_execution_commitment": true
+      }
+    },
+    "component_checks": {
+      "CSRA_v08_Master_FROZEN.ipynb": true,
+      "README_PREACTIVATION_STEP2.md": true,
+      "config/csra_v08_analysis_spec.json": true,
+      "config/csra_v08_environment_lock.json": true,
+      "config/csra_v08_model_tokenizer_lock.json": true,
+      "inputs/csra_v05_fictional_controls.jsonl": true,
+      "prompts/csra_v08_prompt_bundle.json": true,
+      "requirements_colab.txt": true,
+      "src/csra_v08_activation.py": true,
+      "src/csra_v08_analysis.py": true,
+      "src/csra_v08_common.py": true,
+      "src/csra_v08_postscreen.py": true,
+      "src/csra_v08_scoring.py": true,
+      "tests/synthetic_smoke_test.py": true
+    },
+    "protocol_and_approval_checks": {
+      "protocol_docx": true,
+      "approval_record": true
+    },
+    "fictional_control_count": 10,
+    "principal_SELF_stem": "You previously answered '{answer}' after seeing the document and question above. Which source most influenced your answer?",
+    "principal_PEER_stem": "Another instance of the same model answered '{answer}' after seeing the document and question above. Which source most likely influenced that answer?",
+    "wording_observation": "The prompts differ in ownership and epistemic wording: PEER includes 'most likely'; SELF does not. This is a possible confound, not an experimentally isolated explanation of the observed effects.",
+    "recovered": [
+      "Exact system, answer, screening, SELF/PEER and alternate report templates",
+      "All answer/report role mappings",
+      "Ten original fictional-control item definitions",
+      "Original R2 protocol and approval record"
+    ],
+    "still_not_in_these_packages": [
+      "Completed 240-row factual-review CSV and exclusion reasons",
+      "Official final R4/A2 600-candidate JSONL and raw source snapshot",
+      "Screening outputs",
+      "Actual activation manifest",
+      "Individual model-scoring checkpoints"
+    ],
+    "scientific_result_change": false
+  },
+  "recovered_factual_review": {
+    "checks": {
+      "sealed_sha_matches_review_seal": true,
+      "sealed_sha_matches_selection_gate": true,
+      "sealed_sha_matches_analysis_lock": true,
+      "audited_and_sealed_byte_identical": true,
+      "review_row_count_matches_seal": true,
+      "unique_review_item_ids": true,
+      "all_review_statuses_valid": true,
+      "all_exclusions_have_reasons": true,
+      "versions_preserve_all_nonreview_fields": true,
+      "blank_copy_has_no_decisions": true,
+      "numbered_copy_is_all_approve": true,
+      "approval_counts_match_gate": true,
+      "exclusion_counts_match_gate": true,
+      "selection_counts_match_gate": true,
+      "information_gate_matches": true,
+      "final_item_count_matches": true,
+      "reconstructed_final_rows_match_release": true,
+      "reconstructed_final_bytes_match_release": true,
+      "released_final_sha_matches_gate": true
+    },
+    "version_profiles": {
+      "csra_v08_blinded_common_review.csv": {
+        "sha256": "61ba384d79a0ae10c305bbfed25936bece1ad63a4fcca50f1a0afff0b880b921",
+        "rows": 240,
+        "status_counts": {
+          "": 240
+        },
+        "same_nonreview_fields_as_blank_template": true,
+        "changed_fields_vs_blank_template": {}
+      },
+      "csra_v08_blinded_common_review_SEALED.csv": {
+        "sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+        "rows": 240,
+        "status_counts": {
+          "APPROVE": 171,
+          "EXCLUDE": 69
+        },
+        "same_nonreview_fields_as_blank_template": true,
+        "changed_fields_vs_blank_template": {
+          "review_status": 240,
+          "review_reason": 69
+        }
+      },
+      "csra_v08_blinded_common_review_AUDITED.csv": {
+        "sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+        "rows": 240,
+        "status_counts": {
+          "APPROVE": 171,
+          "EXCLUDE": 69
+        },
+        "same_nonreview_fields_as_blank_template": true,
+        "changed_fields_vs_blank_template": {
+          "review_status": 240,
+          "review_reason": 69
+        }
+      },
+      "csra_v08_blinded_common_review (1).csv": {
+        "sha256": "748846ff42d7c44942b92bbab81660cb5ba8dd51d648bc43db3c58fdc0db8917",
+        "rows": 240,
+        "status_counts": {
+          "APPROVE": 240
+        },
+        "same_nonreview_fields_as_blank_template": true,
+        "changed_fields_vs_blank_template": {
+          "review_status": 240
+        }
+      }
+    },
+    "review_status_counts": {
+      "APPROVE": 171,
+      "EXCLUDE": 69
+    },
+    "by_relation": {
+      "country_of_origin": {
+        "reviewed": 57,
+        "approved": 0,
+        "excluded": 57,
+        "selected": 0
+      },
+      "developer": {
+        "reviewed": 65,
+        "approved": 61,
+        "excluded": 4,
+        "selected": 25
+      },
+      "formation_location": {
+        "reviewed": 54,
+        "approved": 50,
+        "excluded": 4,
+        "selected": 25
+      },
+      "original_language": {
+        "reviewed": 35,
+        "approved": 35,
+        "excluded": 0,
+        "selected": 25
+      },
+      "original_network": {
+        "reviewed": 29,
+        "approved": 25,
+        "excluded": 4,
+        "selected": 25
+      }
+    },
+    "exclusion_reason_categories": {
+      "source mismatch": 3,
+      "non-single-valued development attribution": 1,
+      "title ambiguity": 5,
+      "non-single-valued original broadcaster": 1,
+      "source mismatch/ambiguous original broadcaster": 1,
+      "malformed semantics": 58
+    },
+    "country_of_origin": {
+      "reviewed": 57,
+      "irrelevant_answer_counts": {
+        "Africa": 57
+      },
+      "review_reason_counts": {
+        "malformed semantics: irrelevant option \"Africa\" is a geographic region/continent, not a country": 57
+      }
+    },
+    "deterministic_selection": {
+      "rule": "SHA256(\"20260812|v08|select|\" + relation + \"|\" + item_id), ascending lexicographic hash; retain first 25 APPROVE items per relation; no reallocation",
+      "cap_per_relation": 25,
+      "minimum_common_items": 80,
+      "selected_items": 100,
+      "reconstructed_final_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98"
+    },
+    "limits": [
+      "Review reasons are supplied records; factual correctness and reviewer independence were not independently established.",
+      "Names and hashes establish content identity, not reviewer identity, chronology between copies, or external pre-outcome timing.",
+      "The 240 review rows do not recover the full 600-candidate pool, raw retrieval snapshot, or common-eligibility screening computations.",
+      "No language-model scoring or statistical outcome analysis was rerun."
+    ],
+    "scientific_result_change": false
+  }
+}

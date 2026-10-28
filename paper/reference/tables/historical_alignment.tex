@@ -1,0 +1,17 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Alignment estimates with normalization fixed at sample values during bootstrap resampling. The pooled-scale and within-frame columns use different standardizations. Table~\ref*{tab:alignment} of the main article re-estimates within-frame scales in each draw.}
+\label{tab:historical_alignment}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Model & Pooled-scale slope difference & Within-frame difference\\
+\midrule
+Qwen & \shortstack{$0.1333$\\$[0.1174,\,0.1492]$} & \shortstack{$-0.0114$\\$[-0.0251,\,0.0023]$}\\[5pt]
+Granite & \shortstack{$0.0742$\\$[0.0200,\,0.1282]$} & \shortstack{$0.0623$\\$[0.0043,\,0.1196]$}\\[5pt]
+Phi & \shortstack{$0.0218$\\$[-0.0106,\,0.0539]$} & \shortstack{$0.0216$\\$[-0.0130,\,0.0559]$}\\[5pt]
+Equal-model mean & \shortstack{$0.0764$\\$[0.0544,\,0.1006]$} & \shortstack{$0.0242$\\$[0.0005,\,0.0505]$}\\[5pt]
+\(H\) & \shortstack{$0.0853$\\$[0.0457,\,0.1251]$} & \shortstack{$-0.0534$\\$[-0.0944,\,-0.0117]$}\\[5pt]
+\bottomrule
+\end{tabular}
+\end{table}

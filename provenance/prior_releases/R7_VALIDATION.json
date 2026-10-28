@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "release_version": "0.11.1",
+  "manuscript_revision": "V7 KAIS",
+  "details": "verification/RELEASE_CHECKS.json",
+  "paper_tables": 22,
+  "paper_figures": 6,
+  "displayed_numeric_entries_checked": 598,
+  "maximum_displayed_numeric_difference": 0,
+  "scientific_files_unchanged": 343
+}

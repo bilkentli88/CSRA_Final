@@ -1,0 +1,37 @@
+# Pilot implementation addendum
+
+Status: unregistered implementation draft. Applies to CSRA-STUDY2-PILOT-1, the existing-100-item pilot only. Read with REGISTRATION_DRAFT.md. These texts clarify the supplied earlier PROTOCOL.md/PDF; neither document is a registration record. References there to build_study2.py or study2/ paths describe the earlier project; the self-contained replacements here are pilot_common.py, tests/selftest.py, and protocol/.
+
+## Scoring and qualification
+
+Model and tokenizer revisions, NF4 weights, double quantization, and FP32 compute/nonquantized dtype are fixed in model_lock.json. Scoring versions are fixed in config.json. The notebook installs PyTorch 2.11.0+cu128 separately and exact declared package versions. Other installed dependencies, GPU type and CUDA runtime are recorded where available; the full dependency environment is not claimed bitwise identical across future Colab sessions. No CPU/disk offload is accepted. Batch size is initially 8. Models run in evaluation/inference mode, without an answer-stage cache, with TF32 disabled. Final-position-only logits are requested when the model forward signature supports that optimization; otherwise full logits are used.
+
+The implementation deliberately retains the original scorer's `apply_chat_template(tokenize=False)` followed by tokenizer `add_special_tokens=True`. This can differ from the generic recommendation to avoid adding special tokens twice. The synthetic preflight records token counts and identity versus False. A changed convention would be a different measurement and must be amended before registration, never silently substituted after report collection.
+
+A/B/C/D must each be the exact single token declared for that model in config.json; no multi-token fallback or leading-space change is allowed. Four label log probabilities use the full vocabulary denominator. Four cyclic label rotations are mapped back to document/prior/both/uncertain; average log support first, then normalize with softmax. OWN is wording in a new stateless conversation, not privileged access to an earlier answering computation.
+
+Preflight uses two unequal-length fictional prompts, and no pilot items, targets, or factorial outcomes. Maximum single-versus-paired label log-probability discrepancy must be <=0.05 nats. It is a coarse technical check, not proof of exact invariance at batch 8 or a reliable cost forecast. Repeat it for all three models and each active scoring session. Long-prompt GPU memory use and actual completion time remain empirical limitations. A qualification failure stops execution and requires a reviewed, pre-outcome amendment if it cannot be resolved within the locked configuration.
+
+## Recovery and technical exclusions
+
+Logical job order is fixed by a seed/SHA-256 key that mixes items, cells and strengths. After CUDA OOM, reduce the preferred batch 8 -> 4 -> 2; if a pair still fails, use singleton calls to isolate the failing job (an explicit addition to the earlier draft). A singleton OOM is committed as terminal_error. Subsequent jobs continue at the reduced size. Other errors and nonfinite scores stop the run; resume after resolving a purely operational problem. Any change to scoring semantics requires a separately timestamped amendment. Never remove completed rows to retry until a desired result appears.
+
+One append-only JSON line commits a complete batch with package/prompt hashes and runtime metadata. Fsync is requested after each append. Only an unfinished final line may be quarantined and truncated on recovery; malformed committed records, duplicate job IDs or mismatched hashes cause a hard stop. Successful and terminal committed jobs are not rerun by the runner. Uncommitted computations may repeat after interruption; exactly-once model inference is not guaranteed. Use one writer per model. Filesystem/cloud durability and manual tampering remain outside this guard.
+
+Analyze only after all expected jobs have a committed status. Any terminal report job excludes its entire item jointly across all strengths, cells and systems, without replacement. Missing jobs are incomplete execution and must be resolved before analysis. Target variance is fixed on that common complete-case set. Attrition >5% triggers the draft's incomplete-evaluation flag; all findings still describe a pilot on old items. At least 20 complete items are required even for this descriptive pipeline. Record every failure, denominator and exclusion.
+
+## Analysis details
+
+The four primary estimands, equal weighting, five fixed whole-triple folds, alpha=1 Ridge, and 98.75% two-sided percentile intervals follow REGISTRATION_DRAFT.md. Bootstrap 10,000 relation-stratified draws of whole ordered P/C/I triples, paired across all systems/cells. Numeric scaling and Ridge refits occur within training folds for every draw. A draw leaving any fixed test fold with zero resampling weight is redrawn deterministically, up to 1,000 attempts; the number of redraws is reported. This conditional estimability rule is an explicit technical addition to the original draft. No report outcomes influence fold assignment.
+
+The primary command also writes descriptive category probabilities and modal counts, per-system q_both contrasts, all two-way and the three-way q_both interaction, and signed/absolute hedging-minus-ownership contrasts. Modal-role association with the frozen answer is summarized by **uncorrected Cramer's V** separately for model, strength, relation and cell; constant-category tables yield an undefined value and an explicit status. These small-stratum summaries have no inferential declarations. Zero-count roles may be absent from the long modal-count table; the probability table always includes all four roles.
+
+Analysis uses the locally validated NumPy 2.3.5, pandas 2.2.3, scikit-learn 1.8.0 and SciPy 1.17.0 versions (also checked by the analysis CLI). These new pilot analysis pins are distinct from the preserved historical environment.
+
+The `--secondary` command additionally evaluates answer-informed and VSA Ridge specifications at 10,000 draws and four-role GradientBoosting at 2,000 of the same seeded draws. GradientBoosting uses duplicated resampled rows, rather than weights alone, to preserve tree split-count rules; all fits use fixed settings without tuning. It can be expensive. Primary-only output explicitly records that the secondary predictive extension was not executed. Never replace a declared 10,000-draw real analysis with a small smoke run. Reduced counts and synthetic checkpoints require the synthetic-only flag, and must never be presented as findings.
+
+Correlation-difference and adjusted-slope analyses are not endpoints of this pilot implementation. The historical Study 1 corrections remain separate. Nominal secondary intervals are descriptive and do not enlarge or inherit the primary four-test multiplicity control.
+
+## Registration boundary
+
+Before new pilot reports: review this complete package, run synthetic preflight, register the exact package-lock hash and scientific documents with an independent timestamp, and record a truthful receipt. Template fields do not constitute registration. The runner validates format/hash/attestation only, not remote registry content. If any locked source/input changes, generate and register a new lock before new reports, retaining the old package and amendment history. The supplied receipt is intentionally blank and blocked.

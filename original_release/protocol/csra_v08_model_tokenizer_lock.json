@@ -1,0 +1,49 @@
+{
+  "artifact": "model_tokenizer_lock",
+  "batch_size": 8,
+  "fine_tuning": false,
+  "frozen_date": "2026-08-12",
+  "models": {
+    "granite": {
+      "chat_template_kwargs": {
+        "thinking": false
+      },
+      "model_id": "ibm-granite/granite-3.3-2b-instruct",
+      "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+      "role": "fixed_target_2_continuity_family",
+      "tokenizer_id": "ibm-granite/granite-3.3-2b-instruct",
+      "tokenizer_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+    },
+    "phi": {
+      "chat_template_kwargs": {},
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "role": "fixed_target_3_continuity_family",
+      "tokenizer_id": "microsoft/Phi-4-mini-instruct",
+      "tokenizer_revision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+    },
+    "qwen": {
+      "chat_template_kwargs": {},
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "role": "fixed_target_1_continuity_family",
+      "tokenizer_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    }
+  },
+  "oom_fallback_batch_sizes": [
+    4,
+    2
+  ],
+  "protocol_id": "CSRA-0.8",
+  "quantization": {
+    "bnb_4bit_compute_dtype": "float32",
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "load_in_4bit": true,
+    "non_quantized_dtype": "float32",
+    "precision_label": "nf4_weights_fp32_compute"
+  },
+  "scientific_object": "Frozen repository revisions under the frozen quantized inference configuration.",
+  "status": "FROZEN_PRE_ACTIVATION"
+}

@@ -1,0 +1,196 @@
+{
+  "title": "Source Reports Under Factual Conflict: Do Answering Models Have a Predictive Advantage?",
+  "author": "Aykut T. Altay",
+  "target": "Neurocomputing",
+  "manuscript_revision": "V10",
+  "manuscript_tex_sha256": "d27c780ec826f998c7546b91ee82d08276b56d78372e88a20d1b815cad623895",
+  "manuscript_pdf_sha256": "b625a67ec418cc1f4f7bf29cccd72d66a63c7ae1beaf75a287cbadf4e5cc7f5c",
+  "tables": [
+    {
+      "number": 1,
+      "display_label": "Table 1",
+      "label": "tab:retention_stages",
+      "reference": "paper/reference/tables/retention_stages.tex",
+      "document": "main",
+      "document_number": "1"
+    },
+    {
+      "number": 2,
+      "display_label": "Table 2",
+      "label": "tab:scalar_prediction",
+      "reference": "paper/reference/tables/scalar_prediction.tex",
+      "document": "main",
+      "document_number": "2"
+    },
+    {
+      "number": 3,
+      "display_label": "Table 3",
+      "label": "tab:alignment",
+      "reference": "paper/reference/tables/alignment.tex",
+      "document": "main",
+      "document_number": "3"
+    },
+    {
+      "number": 4,
+      "display_label": "Table 4",
+      "label": "tab:factorial_primary",
+      "reference": "paper/reference/tables/factorial_primary.tex",
+      "document": "main",
+      "document_number": "4"
+    },
+    {
+      "number": 5,
+      "display_label": "Table 5",
+      "label": "tab:factorial_expanded",
+      "reference": "paper/reference/tables/factorial_expanded.tex",
+      "document": "main",
+      "document_number": "5"
+    },
+    {
+      "number": 6,
+      "display_label": "Table 6",
+      "label": "tab:policy_access",
+      "reference": "paper/reference/tables/policy_access.tex",
+      "document": "main",
+      "document_number": "6"
+    },
+    {
+      "number": 7,
+      "display_label": "Table 7",
+      "label": "tab:fresh_primary",
+      "reference": "paper/reference/tables/fresh_primary.tex",
+      "document": "main",
+      "document_number": "7"
+    },
+    {
+      "number": 8,
+      "display_label": "Table 8",
+      "label": "tab:fresh_by_target",
+      "reference": "paper/reference/tables/fresh_by_target.tex",
+      "document": "main",
+      "document_number": "8"
+    },
+    {
+      "number": 9,
+      "display_label": "Table 9",
+      "label": "tab:csra_posthoc_robustness",
+      "reference": "paper/reference/tables/csra_posthoc_robustness.tex",
+      "document": "main",
+      "document_number": "9"
+    },
+    {
+      "number": 10,
+      "display_label": "Table 10",
+      "label": "tab:csra_posthoc_targets",
+      "reference": "paper/reference/tables/csra_posthoc_targets.tex",
+      "document": "main",
+      "document_number": "10"
+    },
+    {
+      "number": 11,
+      "display_label": "Supplementary Table S1",
+      "label": "tab:all_roles",
+      "reference": "paper/reference/tables/all_roles.tex",
+      "document": "supplementary",
+      "document_number": "S1"
+    },
+    {
+      "number": 12,
+      "display_label": "Supplementary Table S2",
+      "label": "tab:descriptives",
+      "reference": "paper/reference/tables/descriptives.tex",
+      "document": "supplementary",
+      "document_number": "S2"
+    },
+    {
+      "number": 13,
+      "display_label": "Supplementary Table S3",
+      "label": "tab:full_role_prediction",
+      "reference": "paper/reference/tables/full_role_prediction.tex",
+      "document": "supplementary",
+      "document_number": "S3"
+    },
+    {
+      "number": 14,
+      "display_label": "Supplementary Table S4",
+      "label": "tab:correlations",
+      "reference": "paper/reference/tables/correlations.tex",
+      "document": "supplementary",
+      "document_number": "S4"
+    },
+    {
+      "number": 15,
+      "display_label": "Supplementary Table S5",
+      "label": "tab:controls",
+      "reference": "paper/reference/tables/controls.tex",
+      "document": "supplementary",
+      "document_number": "S5"
+    },
+    {
+      "number": 16,
+      "display_label": "Supplementary Table S6",
+      "label": "tab:historical_alignment",
+      "reference": "paper/reference/tables/historical_alignment.tex",
+      "document": "supplementary",
+      "document_number": "S6"
+    },
+    {
+      "number": 17,
+      "display_label": "Supplementary Table S7",
+      "label": "tab:original_sensitivity",
+      "reference": "paper/reference/tables/original_sensitivity.tex",
+      "document": "supplementary",
+      "document_number": "S7"
+    },
+    {
+      "number": 18,
+      "display_label": "Supplementary Table S8",
+      "label": "tab:alternative_targets",
+      "reference": "paper/reference/tables/alternative_targets.tex",
+      "document": "supplementary",
+      "document_number": "S8"
+    },
+    {
+      "number": 19,
+      "display_label": "Supplementary Table S9",
+      "label": "tab:development_results",
+      "reference": "paper/reference/tables/development_results.tex",
+      "document": "supplementary",
+      "document_number": "S9"
+    },
+    {
+      "number": 20,
+      "display_label": "Supplementary Table S10",
+      "label": "tab:fresh_ridge",
+      "reference": "paper/reference/tables/fresh_ridge.tex",
+      "document": "supplementary",
+      "document_number": "S10"
+    },
+    {
+      "number": 21,
+      "display_label": "Supplementary Table S11",
+      "label": "tab:frozen_models",
+      "reference": "paper/reference/tables/frozen_models.tex",
+      "document": "supplementary",
+      "document_number": "S11"
+    },
+    {
+      "number": 22,
+      "display_label": "Supplementary Table S12",
+      "label": "tab:csra_posthoc_absolute",
+      "reference": "paper/reference/tables/csra_posthoc_absolute.tex",
+      "document": "supplementary",
+      "document_number": "S12"
+    }
+  ],
+  "figures": 6,
+  "binding_scope": "V10 separates the main review-format article and standalone supplementary material; numerical table bodies, equations and six figure assets are unchanged.",
+  "supplementary_tex_sha256": "ca04516b3e3a02668994ccfd5ade0a74636f26d5d1cbae64941527a241826ad8",
+  "supplementary_pdf_sha256": "4ba981319b3b7ee1ea2f090a38a84fa6f127203e068df9f9aec2dff7c8361a79",
+  "main_tables": 10,
+  "supplementary_tables": 12,
+  "main_figures": 5,
+  "supplementary_figures": 1,
+  "main_pages": 52,
+  "supplementary_pages": 15
+}

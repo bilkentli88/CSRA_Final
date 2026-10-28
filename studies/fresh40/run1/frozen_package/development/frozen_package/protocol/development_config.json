@@ -1,0 +1,83 @@
+{
+  "protocol_id": "CSRA-DEVELOPMENT-20261020",
+  "status": "EXPLORATORY_OLD100_DEVELOPMENT_ONLY",
+  "seed": 20261020,
+  "target_models": [
+    "granite",
+    "phi",
+    "qwen"
+  ],
+  "reporter_models": [
+    "granite",
+    "phi",
+    "qwen",
+    "mistral"
+  ],
+  "held_out_target": "mistral",
+  "strengths": [
+    "SKEPTICAL",
+    "PROVISIONAL",
+    "BARE"
+  ],
+  "cues": [
+    "SELF_PRESENTED",
+    "OTHER_PRESENTED"
+  ],
+  "conditions": [
+    "NO_DOC",
+    "P_SKEPTICAL",
+    "P_PROVISIONAL",
+    "P_BARE",
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE",
+    "I_PROVISIONAL"
+  ],
+  "max_prompt_tokens": 512,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "text_alpha_grid": [
+    0.1,
+    1,
+    10,
+    100
+  ],
+  "decoder_alpha": 1.0,
+  "shared_cue_for_both_reports": true,
+  "initial_batch_size": 8,
+  "fallback_batch_sizes": [
+    4,
+    2,
+    1
+  ],
+  "human_re_review_completed": false,
+  "fresh_item_execution_allowed": false,
+  "external_registration_required": false,
+  "calibration": {
+    "candidate_sizes": [
+      400,
+      600,
+      800
+    ],
+    "simulations": 1000,
+    "bootstrap_draws": 1999,
+    "variance_multipliers": [
+      1.0,
+      1.5,
+      2.0
+    ],
+    "shift_scenarios": [
+      0.0,
+      0.01,
+      0.03
+    ],
+    "interval_level": 0.975,
+    "halfwidth_goal": 0.01,
+    "width_quantile_for_selection": 0.9
+  },
+  "input_provenance": {
+    "historical_items_sha256": "26f06e2e5130de6a1af8e048a076789b3d964f35015f59e3ad9c1067fb1c313e",
+    "historical_pilot_lock_sha256": "c378cad6b5d528244401a6c7676e38ea76976d429eb090882077858b554ffeab",
+    "note": "Exact old-100 file inherited; its APPROVE fields are historical and do not attest a new independent factual review. No old NF4 scores are reused."
+  }
+}

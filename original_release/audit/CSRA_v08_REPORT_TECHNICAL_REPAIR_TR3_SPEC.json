@@ -1,0 +1,65 @@
+{
+  "protocol_id": "CSRA-0.8",
+  "study": "CSRA v0.8 R4/A2",
+  "repair_id": "TR3",
+  "artifact_type": "documented report-execution technical repair specification",
+  "status": "PROPOSED_TECHNICAL_REPAIR_AFTER_FROZEN_5_PERCENT_AUDIT_TRIGGER",
+  "scientific_change": false,
+  "technical_change": true,
+  "trigger": {
+    "phase": "qwen_reports_main",
+    "checkpoint_sha256": "522586c1b2713f0a75f4731ad22fa749f329fa174faf6aca828ef8feacbdce65",
+    "planned_jobs": 4000,
+    "unique_job_ids": 4000,
+    "ok_jobs": 4000,
+    "terminal_errors": 0,
+    "additional_attempt_rate": 5.727,
+    "attempt_count_distribution": {
+      "1": 44,
+      "2": 46,
+      "3": 92,
+      "5": 92,
+      "6": 46,
+      "7": 3680
+    },
+    "batch_size_used_distribution": {
+      "2": 3818,
+      "6": 6,
+      "8": 176
+    },
+    "frozen_ceiling": 0.05
+  },
+  "frozen_lineage": {
+    "scoring_module_sha256": "ec3b8f62616fdbf83f6792d1d43a23b9c5d3d1575eca20700425323030256c57",
+    "report_runtime_preflight_sha256": "3f0002a18e8105b1bc3ae6fd60fcd24e586e80d22a977fdf429b12b8c019fb8e",
+    "report_unlock_record_sha256": "002a2f40da42181753b5755b0b4481ecbac89bd14e55f518c063002e6cfedadc",
+    "answer_derived_constants_sha256": "494d9c2c46cadeeddd6bb033212c2639a2c2f48d27755cd062119838677b8c8b"
+  },
+  "diagnosis": {
+    "basis": "Frozen source inspection plus technical-only checkpoint metadata; no report log-probability, VSA, SELF/PEER, predictive, or inferential outcomes were inspected.",
+    "finding": "The frozen scorer resets preferred batch size to 8 at every cursor. When 8 and 4 OOM and 2 succeeds, overlapping future jobs are repeatedly included in failed larger batches. This causes systematic non-sticky OOM reprobes and inflates per-job attempt_count while all 4000 jobs ultimately succeed.",
+    "evidence": "batch_size_used can shrink only in the torch.cuda.OutOfMemoryError branch of the frozen scorer; 3818/4000 successful rows used batch size 2."
+  },
+  "repair": {
+    "qwen_main_checkpoint": "Retain byte-for-byte; never rewrite or rerun. Verify exact SHA, 4000 unique expected job IDs, prompt hashes, and all status=ok, then aggregate using the frozen aggregate_report_rotations function.",
+    "sticky_oom_fallback": "Use the frozen _score_batch function unchanged. Start at the specified batch size; after a documented OOM, move only downward through the already-frozen fallback sizes 4 then 2 and keep the reduced size for subsequent batches in that phase instead of re-probing a known-infeasible larger size.",
+    "qwen_remaining_start_batch_size": 2,
+    "granite_phi_start_batch_size": 8,
+    "additional_attempt_ceiling": "Remain 0.05 for newly executed phases. The legacy Qwen main 5% trigger is preserved as TRIGGERED_AND_AUDITED_TR3, not relabeled as a pass.",
+    "scientific_objects_unchanged": [
+      "item set",
+      "prompts",
+      "SELF/PEER frames",
+      "report mappings",
+      "model IDs and revisions",
+      "tokenizer revisions",
+      "NF4 double quantization",
+      "FP32 compute and non-quantized modules",
+      "label scoring",
+      "answer-derived constants",
+      "analysis specification",
+      "predictive/inferential rules"
+    ]
+  },
+  "boundary": "Technical report/control continuation only. Predictive, bootstrap, alignment, sensitivity, and inferential analysis remain prohibited until report-phase finalization is reviewed."
+}

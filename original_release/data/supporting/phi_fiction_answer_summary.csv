@@ -1,0 +1,11 @@
+model_key,item_id,relation,document_text,mean_logp_P,mean_logp_C,mean_logp_I,mapping_jobs,frozen_answer_role,frozen_answer
+phi,fiction_country_01,country_of_origin,A fictional reference record states that Veloria spice cake originated in Lunara.,-15.121649106343588,-0.0002331106914728783,-10.163914721913898,6,C,Lunara
+phi,fiction_country_02,country_of_origin,A fictional reference record states that Mirelden tea wafers originated in Solmere.,-13.82454284032186,-0.00019934742552626025,-9.358337932787132,6,C,Solmere
+phi,fiction_developer_01,developer,A fictional reference record states that Asterion Note was developed by Kestrel Dynamics.,-15.828934033711752,-7.08832951659133e-05,-10.86983769821442,6,C,Kestrel Dynamics
+phi,fiction_developer_02,developer,A fictional reference record states that Nimora Slate was developed by Juniper Forge.,-15.347155888875326,-0.00016252904197244789,-10.61815029925007,6,C,Juniper Forge
+phi,fiction_language_01,original_language,A fictional reference record states that the original language of The Amber Cartographer was Seluvian.,-15.508704026540121,-0.00017534625355134872,-10.293039030582198,6,C,Seluvian
+phi,fiction_language_02,original_language,A fictional reference record states that the original language of Winter at Caligo was Tarevic.,-15.211310068766275,-0.00011565784628449667,-9.886776738584862,6,C,Tarevic
+phi,fiction_location_01,formation_location,A fictional reference record states that Glass Meridian was formed in Ravenport.,-14.83929999669393,-0.0004525854104334333,-9.937371362177752,6,C,Ravenport
+phi,fiction_location_02,formation_location,A fictional reference record states that The Quiet Vectors was formed in Bellweather.,-14.531376043955484,-0.00032770623632435064,-9.591966246525166,6,C,Bellweather
+phi,fiction_network_01,original_network,A fictional reference record states that Harbor Nine originally aired on Aurora Channel.,-14.310424327850342,-0.0001144068016098269,-9.542423142013527,6,C,Aurora Channel
+phi,fiction_network_02,original_network,A fictional reference record states that The Lantern Bureau originally aired on Northstar Television.,-15.337685743967691,-9.205889864460914e-05,-10.652487252294426,6,C,Northstar Television

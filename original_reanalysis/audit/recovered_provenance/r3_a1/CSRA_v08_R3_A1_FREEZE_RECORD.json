@@ -1,0 +1,31 @@
+{
+  "protocol_id": "CSRA-0.8",
+  "protocol_revision": "R3",
+  "amendment_id": "A1",
+  "status": "APPROVED_R3_NOT_ACTIVATED",
+  "approval_local_datetime": "2026-08-12T16:56:00+03:00",
+  "scientific_boundary": "No final v0.8 candidate JSONL or identity list, model score, CIE, VSA, predictive result, or inferential statistic had been observed at amendment approval; only aggregate relation-level builder-feasibility counts and skip reasons were observed.",
+  "hashes": {
+    "R2_protocol_sha256": "13c7aacbf784639524c0eb4ce714e907eec193107f39264c91752005e31e2a64",
+    "TR1_builder_bundle_superseded_sha256": "6fae79129174a03a9f019c85bcb1bf5289d2bd0e72e01aba2118cd821a54d988",
+    "R3_A1_builder_bundle_sha256": "3bab4a6ea04b905cf6c0389e51def426af5cac6e72f0f3069eafcb6575ddcb7b",
+    "R3_A1_builder_script_sha256": "abc84d6eb7b1910767455ec646d569fee0fd954a15f95dc788b694211b2120b3",
+    "R3_A1_raw_snapshot_sealer_sha256": "bc2f18ce6672151b1a44e07039fcfea8153c9049268a61a69c76f1c45c1597a6",
+    "R3_A1_builder_spec_sha256": "312bc082234aa33936cece1a55c602e0e9b7c72a873d5f503f029351861a4244",
+    "TR1_query_bundle_sha256": "c5eb9eddecb0783d237bf9b934caeccebf4c8ff113f685eddd9c1c0157b41cfe",
+    "combined_prior_item_blocklist_sha256": "bf84ffcca5bc9cc0961def44955f5d7e422cd5fd54b61fda40d29f2ef802851f",
+    "analysis_code_notebook_sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+    "prompt_template_bundle_sha256": "c2f09968a3112952558081c086acc17043ee5d2b3d36f481b19b8796808c61f9",
+    "amendment_document_sha256": "ea6f77e710e0d97b8b32e2f313048a8e5bc93776fd197654c3f0734297983b1b",
+    "approval_record_sha256": "ddab3a6f1350c10aee0a232b0bb2148cea7f35901548787d78e1979d6c686e3d",
+    "component_manifest_sha256": "3af563e0133245dd8945700eec1ca106fdcc5240390f06f9c54f151ba346a1da"
+  },
+  "next_required_hashes": [
+    "TR1 raw-source aggregate SHA-256",
+    "TR1 raw-source manifest SHA-256",
+    "R3 candidate JSONL SHA-256",
+    "R3 builder output manifest SHA-256",
+    "activation manifest SHA-256"
+  ],
+  "execution_rule": "Seal the preserved TR1 raw source snapshot first; then execute only the frozen R3/A1 builder into a new output directory. Do not start screening before the activation manifest is frozen."
+}

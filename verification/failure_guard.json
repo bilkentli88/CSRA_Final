@@ -1,0 +1,8 @@
+{
+  "status": "PASSED",
+  "test": "Changed-byte integrity failure and stale-success protection",
+  "expected_nonzero_exit_confirmed": true,
+  "paper_report_marked_FAILED": true,
+  "temporary_input_restored_and_integrity_rechecked": true,
+  "source_repository_modified": false
+}

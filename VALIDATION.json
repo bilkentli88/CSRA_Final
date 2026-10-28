@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "release_version": "0.11.4",
+  "manuscript_revision": "V10 Neurocomputing",
+  "details": "verification/RELEASE_CHECKS.json",
+  "main_tables": 10,
+  "supplementary_tables": 12,
+  "paper_figures": 6,
+  "displayed_numeric_entries_checked": 598,
+  "maximum_displayed_numeric_difference": 0,
+  "scientific_files_unchanged": 343
+}

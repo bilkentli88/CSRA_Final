@@ -1,0 +1,59 @@
+{
+  "package_SHA256": "c1979c385c294501872904168af7a3a99d43178eaf373ab269bb0bafac3c5894",
+  "execution_commitments": {
+    "step2/prompts/csra_v08_prompt_bundle.json": {
+      "sha256": "1c392ee6b2c396fcaee029411d3a428f8364223bd2e6f90f8c0b7db7ec922f09",
+      "matches_execution_commitment": true
+    },
+    "step2/CSRA_v08_PROMPT_TEMPLATE_BUNDLE_FROZEN.zip": {
+      "sha256": "c2f09968a3112952558081c086acc17043ee5d2b3d36f481b19b8796808c61f9",
+      "matches_execution_commitment": true
+    },
+    "step2/CSRA_v08_ANALYSIS_NOTEBOOK_FROZEN.zip": {
+      "sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+      "matches_execution_commitment": true
+    },
+    "step2/inputs/csra_v05_fictional_controls.jsonl": {
+      "sha256": "84677b428c921cb46429b80f7071f10874621b115ce8037f668a4f56c899e679",
+      "matches_execution_commitment": true
+    }
+  },
+  "component_checks": {
+    "CSRA_v08_Master_FROZEN.ipynb": true,
+    "README_PREACTIVATION_STEP2.md": true,
+    "config/csra_v08_analysis_spec.json": true,
+    "config/csra_v08_environment_lock.json": true,
+    "config/csra_v08_model_tokenizer_lock.json": true,
+    "inputs/csra_v05_fictional_controls.jsonl": true,
+    "prompts/csra_v08_prompt_bundle.json": true,
+    "requirements_colab.txt": true,
+    "src/csra_v08_activation.py": true,
+    "src/csra_v08_analysis.py": true,
+    "src/csra_v08_common.py": true,
+    "src/csra_v08_postscreen.py": true,
+    "src/csra_v08_scoring.py": true,
+    "tests/synthetic_smoke_test.py": true
+  },
+  "protocol_and_approval_checks": {
+    "protocol_docx": true,
+    "approval_record": true
+  },
+  "fictional_control_count": 10,
+  "principal_SELF_stem": "You previously answered '{answer}' after seeing the document and question above. Which source most influenced your answer?",
+  "principal_PEER_stem": "Another instance of the same model answered '{answer}' after seeing the document and question above. Which source most likely influenced that answer?",
+  "wording_observation": "The prompts differ in ownership and epistemic wording: PEER includes 'most likely'; SELF does not. This is a possible confound, not an experimentally isolated explanation of the observed effects.",
+  "recovered": [
+    "Exact system, answer, screening, SELF/PEER and alternate report templates",
+    "All answer/report role mappings",
+    "Ten original fictional-control item definitions",
+    "Original R2 protocol and approval record"
+  ],
+  "still_not_in_these_packages": [
+    "Completed 240-row factual-review CSV and exclusion reasons",
+    "Official final R4/A2 600-candidate JSONL and raw source snapshot",
+    "Screening outputs",
+    "Actual activation manifest",
+    "Individual model-scoring checkpoints"
+  ],
+  "scientific_result_change": false
+}

@@ -1,0 +1,176 @@
+{
+  "alignment": {
+    "bh_family": "three model-specific Delta tests",
+    "bootstrap": "relation-stratified paired common-item cluster preserving each item across models",
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 20260813,
+    "formula": "VSA_z ~ CIE_z * SELF * C(model_key) + C(frozen_answer_role) + baseline_margin_z + C(strength) + C(analysis_relation)",
+    "group": "model_item_id",
+    "minimum_valid_bootstrap": 1900,
+    "optimizers": [
+      "lbfgs",
+      "powell",
+      "bfgs",
+      "cg",
+      "nm"
+    ],
+    "standardization": "within model on the observed three C-asserting analysis rows; frozen before bootstrap and not recomputed in resamples"
+  },
+  "alternate_wording": {
+    "fraction": 0.2,
+    "rank_key": "SHA256(\"20260812|v08|alternate|\" + relation + \"|\" + item_id)",
+    "target_rounding": "floor(0.20*N + 0.5); floor relation quotas then largest-remainder allocation, ties by relation"
+  },
+  "artifact": "analysis_execution_spec",
+  "bootstrap": {
+    "ci": "two-sided percentile 95%",
+    "denominators": "frozen answer-derived constants",
+    "duplicates_keep_original_fold": true,
+    "full_refit": [
+      "preprocessing",
+      "Ridge X1",
+      "Ridge X2",
+      "Ridge X3"
+    ],
+    "resampling_relation": "original relation",
+    "type": "relation-stratified paired common-item bootstrap"
+  },
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 20260813,
+  "frozen_date": "2026-08-12",
+  "global_design_seed": 20260812,
+  "historical_predictive": {
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "conditions": [
+      "C_SKEPTICAL",
+      "C_PROVISIONAL",
+      "C_BARE",
+      "P_PROVISIONAL",
+      "I_PROVISIONAL"
+    ],
+    "inner": "GroupKFold(4) by item_id",
+    "metrics": [
+      "R2",
+      "MAE"
+    ],
+    "outer": "GroupKFold(5) by item_id",
+    "visible": [
+      "baseline_margin",
+      "answer_matches_document",
+      "strength",
+      "relation"
+    ]
+  },
+  "minimum_valid_bootstrap": 1900,
+  "normalization": {
+    "loss_denominator": "population variance (ddof=0) of CIE within model across the three primary C-asserting conditions, computed on the post-answer technically complete locked set and frozen before reports"
+  },
+  "peer_effect": "equal-model mean normalized OOF squared-error reduction X1 minus X2",
+  "practical_delta": 0.01,
+  "primary_conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE"
+  ],
+  "primary_effect": "theta_SELF = equal-model mean of item-level normalized OOF squared-error reduction X2 minus X3, averaged over three strengths per item",
+  "primary_fold": {
+    "assignment": "rank within analysis_relation then round-robin 0..4",
+    "n_folds": 5,
+    "rank_key": "SHA256(\"20260812|v08|fold|\" + analysis_relation + \"|\" + item_id)"
+  },
+  "primary_models": [
+    "qwen",
+    "granite",
+    "phi"
+  ],
+  "protocol_id": "CSRA-0.8",
+  "relation_collapse": {
+    "basis": "final selected common item counts before answer interventions",
+    "collapsed_label": "OTHER_RARE",
+    "threshold": 5
+  },
+  "relations": [
+    "country_of_origin",
+    "developer",
+    "formation_location",
+    "original_language",
+    "original_network"
+  ],
+  "report_conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE",
+    "P_PROVISIONAL",
+    "I_PROVISIONAL"
+  ],
+  "ridge_alpha": 1.0,
+  "ridge_alpha_sensitivity": [
+    0.1,
+    10.0
+  ],
+  "selection": {
+    "cap_per_original_relation": 25,
+    "minimum_common_items": 80,
+    "no_reallocation": true,
+    "rank_key": "SHA256(\"20260812|v08|select|\" + relation + \"|\" + item_id)"
+  },
+  "sensitivity_delta": [
+    0.0,
+    0.02
+  ],
+  "sensitivity_folds": [
+    {
+      "name": "sensitivity_1",
+      "rank_key": "SHA256(\"20260812|v08|fold_sens1|\" + analysis_relation + \"|\" + item_id)"
+    },
+    {
+      "name": "sensitivity_2",
+      "rank_key": "SHA256(\"20260812|v08|fold_sens2|\" + analysis_relation + \"|\" + item_id)"
+    },
+    {
+      "name": "sensitivity_3",
+      "rank_key": "SHA256(\"20260812|v08|fold_sens3|\" + analysis_relation + \"|\" + item_id)"
+    },
+    {
+      "name": "sensitivity_4",
+      "rank_key": "SHA256(\"20260812|v08|fold_sens4|\" + analysis_relation + \"|\" + item_id)"
+    },
+    {
+      "name": "sensitivity_5",
+      "rank_key": "SHA256(\"20260812|v08|fold_sens5|\" + analysis_relation + \"|\" + item_id)"
+    }
+  ],
+  "status": "FROZEN_PRE_ACTIVATION",
+  "technical": {
+    "additional_attempt_ceiling": 0.05,
+    "identical_retries": 2,
+    "main_report_requires_100_percent_completion": true,
+    "oom_fallback": [
+      4,
+      2
+    ],
+    "planned_batch_size": 8
+  },
+  "unlock_phrases": {
+    "activation": "I_CONFIRM_NO_V08_MODEL_SCORE_HAS_BEEN_OBSERVED",
+    "reports": "I_HAVE_VERIFIED_V08_ANSWER_CONSTANTS_AND_UNLOCK_REPORTS"
+  },
+  "x1": [
+    "baseline_margin",
+    "frozen_answer_role",
+    "strength",
+    "analysis_relation"
+  ],
+  "x2_extra": [
+    "PEER"
+  ],
+  "x3_extra": [
+    "SELF"
+  ]
+}

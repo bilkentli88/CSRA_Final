@@ -1,0 +1,58 @@
+{
+  "protocol_id": "CSRA-STUDY2-PILOT-1",
+  "models": [
+    "qwen",
+    "granite",
+    "phi"
+  ],
+  "conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE"
+  ],
+  "primary_bootstrap_reps": 10000,
+  "secondary_bootstrap_reps": 2000,
+  "bootstrap_seed": 20261016,
+  "fold_seed": 20261016,
+  "initial_batch_size": 8,
+  "fallback_batch_sizes": [
+    4,
+    2
+  ],
+  "prompt_tokenization_add_special_tokens": true,
+  "expected_label_ids": {
+    "qwen": {
+      "A": 32,
+      "B": 33,
+      "C": 34,
+      "D": 35
+    },
+    "granite": {
+      "A": 51,
+      "B": 52,
+      "C": 53,
+      "D": 54
+    },
+    "phi": {
+      "A": 32,
+      "B": 33,
+      "C": 34,
+      "D": 35
+    }
+  },
+  "expected_label_prefix": "",
+  "scoring_versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.13.1",
+    "bitsandbytes": "0.50.0",
+    "accelerate": "1.14.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "analysis_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0"
+  }
+}

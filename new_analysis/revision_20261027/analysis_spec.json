@@ -1,0 +1,36 @@
+{
+  "status": "POST_HOC_SPECIFIED_BEFORE_THIS_SCRIPT_RUN",
+  "date": "2026-10-27",
+  "interpretation": "All original data, Fresh40 and earlier sensitivities have already been inspected. These additions are exploratory; no prospective confirmation is claimed.",
+  "fresh40": {
+    "data": "V4 saved per-case predictions; no new fitting",
+    "contrasts": [
+      "source_over_visible",
+      "source_over_observer",
+      "source_added_to_probe",
+      "observer_added_to_probe",
+      "probe_source_over_probe_observer",
+      "source_alone_over_probe"
+    ],
+    "intervals": "10,000 paired whole-fact group bootstrap draws; target-specific and equal-target intervals; fixed fitted predictors; 95% unadjusted descriptive intervals",
+    "seed": 20261020,
+    "leave_one_target_out": "Equal mean of the other two fixed targets, not inference to a model population",
+    "diagnostics": "Absolute errors, target-specific outcome scale, agreement frequencies, gains by relation/strength/observed agreement, and group influence. Descriptive associations are not mechanisms."
+  },
+  "factorial": {
+    "data": "Saved 7,200 four-rotation report aggregates and frozen answer identities",
+    "additional_outcomes": [
+      "q_document minus q_prior using all four normalized roles",
+      "logp_document minus logp_prior"
+    ],
+    "bootstrap": "10,000 relation-stratified whole ordered-triple group draws using the original fixed-fold estimability rule and seed 20261016",
+    "role_profiles": "Means of all four normalized role supports by target and answer visibility",
+    "association": "Difference in mean q_document-minus-q_prior between recorded answers C and P, separately shown/hidden, and their shown-minus-hidden difference; I answers retained in role summaries but excluded from this explicitly C-versus-P association",
+    "limitations": "Answer role is observed, not randomized. Association is not an accuracy or faithfulness measure. New intervals are descriptive 95%, unadjusted; original four primary adjusted intervals remain unchanged."
+  },
+  "verification": [
+    "Reconstruct every existing pooled post hoc point and CI",
+    "Reconstruct original factorial primary category contrasts and per-target intervals",
+    "Require immutable experimental and original analysis inputs unchanged"
+  ]
+}

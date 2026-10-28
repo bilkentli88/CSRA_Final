@@ -1,0 +1,13 @@
+\begin{table}[tbp]
+\centering\small\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
+\caption{Fresh40 information policies. All include visible-input features. Calls are additional language-model forwards per target/item across three strengths, treating the question, document and recorded answer as given. Different model calls have unequal computational costs.}\label{tab:policy_access}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}X r@{}}
+\toprule
+Policy & Added information & Calls \\ \midrule
+Visible inputs & Two text forecasts, relation and strength; no direct target scores & 0 \\
+Source report & Target-corresponding reporter\textquotesingle s three log ratios & 24 \\
+Selected observer & Development-selected different reporter\textquotesingle s three log ratios & 24 \\
+Direct probe & Symmetric no-document support contrasts and entropy & 6 \\
+Probe + report & Direct probe plus source or selected-observer report & 30 \\
+\bottomrule\end{tabularx}
+\end{table}

@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "date": "2026-10-28",
+  "repository_package": "R10",
+  "release_version": "0.11.4",
+  "manuscript_revision": "V10 Neurocomputing",
+  "current_checks": {
+    "scientific_files_byte_identical_to_R9": 343,
+    "paper_route": "PASSED",
+    "main_tables_rebuilt": 10,
+    "supplementary_tables_rebuilt": 12,
+    "figures_rebuilt": 6,
+    "displayed_numeric_entries_checked": 598,
+    "maximum_displayed_numeric_difference": 0,
+    "raw_jobs_verified": 89280,
+    "cross_document_references_verified": 22
+  },
+  "change": "Main/supplementary document split and S numbering; publication labels included in table coverage.",
+  "prior_verification": "provenance/prior_releases/R9_RELEASE_CHECKS.json and earlier checks",
+  "new_model_inference": false,
+  "new_statistical_analysis": false
+}

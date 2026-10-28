@@ -1,0 +1,12 @@
+{
+  "manuscript": "V7",
+  "base_repository": "R6",
+  "changes": [
+    "Explicit Appendix Table captions/references",
+    "Main-text first citations in order",
+    "Reader-facing prose and current table captions",
+    "Article binding and renderer display labels updated"
+  ],
+  "scientific_data_and_dated_analysis_packages_changed": false,
+  "new_experiments": false
+}

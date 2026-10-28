@@ -1,0 +1,7 @@
+model_key,frame,n,document_report_count,document_report_share,mean_VSA
+qwen,PEER,10,10,1.0,28.21522621512413
+qwen,SELF,10,10,1.0,31.48902497291565
+granite,PEER,10,0,0.0,6.203154746396467
+granite,SELF,10,9,0.9,8.39313528739658
+phi,PEER,10,10,1.0,11.49607683457889
+phi,SELF,10,10,1.0,9.703189652880246

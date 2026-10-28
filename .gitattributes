@@ -1,0 +1,2 @@
+# Frozen SHA-256 records require byte-preserving checkouts, including Windows.
+* -text

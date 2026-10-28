@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying manuscript and identify the repository commit or release used."
+type: software
+title: "CSRA: Source Reports Under Factual Conflict"
+version: "0.11.4"
+date-released: "2026-10-28"
+authors:
+  - family-names: "Altay"
+    given-names: "Aykut T."
+abstract: "Scores, frozen predictors and executable analyses supporting the V10 manuscript: Source Reports Under Factual Conflict: Do Answering Models Have a Predictive Advantage?"

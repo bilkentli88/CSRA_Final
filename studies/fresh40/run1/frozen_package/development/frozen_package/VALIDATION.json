@@ -1,0 +1,17 @@
+{
+  "status": "LOCAL_ARTIFICIAL_DATA_CHECKS_PASSED_NEW_GPU_BACKEND_UNEXECUTED",
+  "tests_passed": 12,
+  "python_files_parsed": 10,
+  "notebook_code_cells_parsed": 5,
+  "notebook_total_cells": 11,
+  "old_C_document_fixture_matches": 900,
+  "new_scientific_outcomes_collected": 0,
+  "new_human_reviews_completed": 0,
+  "default_calibration_simulations": 1000,
+  "default_calibration_bootstrap_draws": 1999,
+  "full_integration_uses_artificial_data_only": true,
+  "optional_gradient_boosting_artificial_check": "PASS",
+  "new_gpu_backend_locally_executed": false,
+  "pinned_encoder_locally_downloaded": false,
+  "factual_re_review_pending": true
+}

@@ -1,0 +1,21 @@
+review_item_id,relation,subject,question,P,C,I,source_subject_id,historical_source_object_id
+REVIEW001,developer,Google Browser Sync,Who or what developed Google Browser Sync?,Google,Konami,Capcom,Q1189015,Q95
+REVIEW002,developer,Heinkel HD 39,Who or what developed Heinkel HD 39?,Heinkel,Rare Ltd.,Adobe,Q5699819,Q155296
+REVIEW003,developer,Heinkel He 162,Who or what developed Heinkel He 162?,Heinkel,Rare Ltd.,Adobe,Q156878,Q155296
+REVIEW004,developer,Yandex Browser,Who or what developed Yandex Browser?,Yandex,Red Storm Entertainment,Danger Close Games,Q1662015,Q5281
+REVIEW005,developer,Windows Setup,Who or what developed Windows Setup?,Microsoft,Apple Inc.,Capcom,Q863146,Q2283
+REVIEW006,formation_location,Boyz II Men,Where was Boyz II Men formed?,Philadelphia,Boston,England,Q651231,Q1345
+REVIEW007,formation_location,Angus & Julia Stone,Where was Angus & Julia Stone formed?,Sydney,Utrecht,Basel,Q544322,Q3130
+REVIEW008,formation_location,Slaughter and May,Where was Slaughter and May formed?,London,Tokyo,Paris,Q7539047,Q84
+REVIEW009,formation_location,Tucker Corporation,Where was Tucker Corporation formed?,Chicago,Dublin,Beijing,Q18396211,Q1297
+REVIEW010,formation_location,In This Moment,Where was In This Moment formed?,Los Angeles,New York City,London,Q1468680,Q65
+REVIEW011,original_language,Un carnet de bal,What was the original language of Un carnet de bal?,French,German,Italian,Q942793,Q150
+REVIEW012,original_language,A Summer in St. Tropez,What was the original language of A Summer in St. Tropez?,French,German,Italian,Q1305173,Q150
+REVIEW013,original_language,La Collectionneuse,What was the original language of La Collectionneuse?,French,German,Italian,Q1215948,Q150
+REVIEW014,original_language,Woubi Chéri,What was the original language of Woubi Chéri?,French,German,Italian,Q3570064,Q150
+REVIEW015,original_language,Asterix & Obelix Take On Caesar,What was the original language of Asterix & Obelix Take On Caesar?,French,German,Italian,Q314642,Q150
+REVIEW016,original_network,Imperio de mentiras,On which network did Imperio de mentiras originally air?,Las Estrellas,CBS,Comedy Central,Q96381994,Q80478
+REVIEW017,original_network,"Ni Hao, Kai-Lan","On which network did Ni Hao, Kai-Lan originally air?",Nickelodeon,ITV,BBC One,Q518874,Q154958
+REVIEW018,original_network,Der letzte Zeuge,On which network did Der letzte Zeuge originally air?,ZDF,TF1,Disney Channel,Q462756,Q48989
+REVIEW019,original_network,44th David di Donatello Awards,On which network did 44th David di Donatello Awards originally air?,Rai 1,The CW,British Broadcasting Corporation,Q3703433,Q258131
+REVIEW020,original_network,Barata de primavera,On which network did Barata de primavera originally air?,Las Estrellas,CBS,Comedy Central,Q5719282,Q80478

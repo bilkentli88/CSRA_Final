@@ -1,0 +1,22 @@
+[
+  {
+    "stage": "author_refined_V1",
+    "file_name": "CSRA_Article_V1.zip",
+    "sha256": "38bda8a65ec7eb57270d2ee87657366e13e99999655bf1f0795e2f6759ea95d1"
+  },
+  {
+    "stage": "factorial",
+    "file_name": "CSRA_Study2_Exploratory_results.zip",
+    "sha256": "8287fed9b52d545958427ea03991e6f2f6c6db9bbf090daf4b9d39edbdcfc7c0"
+  },
+  {
+    "stage": "development",
+    "file_name": "CSRA_Development_results.zip",
+    "sha256": "eed652c87d05af6a1c9a8284c8584797282ecef656324582e5e5c2c9e23562cf"
+  },
+  {
+    "stage": "Fresh40",
+    "file_name": "run1_CSRA_Fresh40_results.zip",
+    "sha256": "e5ca11444d32acea1aa26d174878c7b9883cd53fbc6ed4acf373e78c7d814ddd"
+  }
+]

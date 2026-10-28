@@ -1,0 +1,14 @@
+{
+  "status": "PASSED",
+  "manuscript_revision": "V6 KAIS",
+  "tables_rebuilt": 22,
+  "numeric_entries_checked": 598,
+  "maximum_displayed_numeric_difference": 0.0,
+  "figures_rebuilt": 6,
+  "new_model_calls": 0,
+  "scope": "All table bodies regenerated from identified numerical/design records; historical statistical refit results are inputs where stated. Later grouped intervals recomputed. Figure numerical precision may exceed the original rounded plotting constants; PDF metadata/font bytes need not match.",
+  "python": "3.12.14",
+  "runtime_seconds": 15.94,
+  "raw_jobs_verified": 89280,
+  "command": "python reproduce.py paper"
+}

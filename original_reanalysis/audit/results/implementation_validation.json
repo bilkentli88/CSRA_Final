@@ -1,0 +1,7 @@
+{
+  "point_max_abs_error": 4.440892098500626e-16,
+  "bootstrap_max_abs_error": 6.492744709929443e-16,
+  "bootstrap_draws_checked_against_author": 3,
+  "sealed_primary_CI_max_abs_error": 1.2533377113932431e-16,
+  "sealed_alignment_point_and_CI_max_abs_error": 3.885780586188048e-15
+}

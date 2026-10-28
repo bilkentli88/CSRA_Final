@@ -1,0 +1,30 @@
+{
+  "status": "PASSED",
+  "date": "2026-10-28",
+  "repository_package": "R7",
+  "release_version": "0.11.1",
+  "manuscript_revision": "V7 KAIS",
+  "current_checks": {
+    "paper_route": "PASSED",
+    "tables_rebuilt": 22,
+    "displayed_numeric_entries_checked": 598,
+    "maximum_displayed_numeric_difference": 0,
+    "figures_rebuilt": 6,
+    "main_text_first_table_citations_consecutive": true,
+    "appendix_tables_explicitly_identified": 12,
+    "scientific_files_byte_identical_to_R6": 343
+  },
+  "inherited_R6_checks": "provenance/prior_releases/R6_RELEASE_CHECKS.json; source inputs and scientific implementations unchanged",
+  "repeated_for_R7": [
+    "Integrity and raw-score aggregation",
+    "Earlier 98 numerical checks and added grouped analyses",
+    "All current table bodies and figures"
+  ],
+  "not_repeated_for_R7": [
+    "New model inference",
+    "Frozen predictor replay",
+    "Development-only robustness refits",
+    "Full historical or primary-factorial bootstrap refits"
+  ],
+  "scope": "Editorial article/repository alignment. Numerical results and scientific data unchanged."
+}

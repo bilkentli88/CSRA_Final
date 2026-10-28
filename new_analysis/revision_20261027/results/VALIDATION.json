@@ -1,0 +1,45 @@
+{
+  "fresh40": {
+    "rows": 2880,
+    "scenarios": 8,
+    "existing_pooled_comparisons_reproduced": 48,
+    "target_intervals": 144,
+    "leave_one_target_out_intervals": 144,
+    "max_verification_difference": 9.094947017729282e-13
+  },
+  "factorial": {
+    "report_rows": 7200,
+    "items": 100,
+    "ordered_triple_groups": 57,
+    "bootstrap_draws": 10000,
+    "technical_redraws": 2,
+    "original_per_target_intervals_reproduced": 9,
+    "original_adjusted_category_intervals_reproduced": 3,
+    "max_verification_difference": 4.440892098500626e-16
+  },
+  "status": "PASSED",
+  "analysis_status": "POST_HOC_EXPLORATORY",
+  "inference_calls": 0,
+  "predictor_refits": 0,
+  "source_inputs_unchanged": true,
+  "source_sha256": {
+    "new_analysis/posthoc_20261026/results/per_case_predictions.csv": "351be52c0f7246de3458acdb9a77c62a6dfb7db736dd169ce9416b4170c8a2d3",
+    "new_analysis/posthoc_20261026/results/contrasts.csv": "f8003ea9e181e9d5af4c2ba2763d1b7d4f8b38d6fdc5a00633ac8ad72cef92dc",
+    "studies/factorial/run1/primary_analysis/aggregated_reports.csv": "0dcac3422f99286757b9d1c1ece63a1fdbbc9a75094382b1301310dd56c2b886",
+    "studies/factorial/run1/primary_analysis/primary.csv": "f6e9a4148eea6c1d21dcf2f0e0e9c54c7a706b0ef04d02bff56e66314cc8d017",
+    "studies/factorial/run1/primary_analysis/per_model_category_contrasts.csv": "4ff2db14e5b3452d7d8e5f4390343d576a06908729a6ec55ff94c041fb32a05d",
+    "studies/factorial/run1/frozen_package/inputs/items.csv": "26f06e2e5130de6a1af8e048a076789b3d964f35015f59e3ad9c1067fb1c313e",
+    "studies/factorial/run1/frozen_package/inputs/answer_targets.csv": "f0bf450f57c5a959b4533e928994881b18663ab704a6a5f7e736097fc4013f85",
+    "studies/factorial/run1/frozen_package/protocol/folds.json": "96bdf00d7802ca407c82766e2d2dfb0728262981b95c9c9c9e099fa5d9cc13fb"
+  },
+  "script_sha256": "da372e1c75ee0e3c48b612b2fe3bd1a482b5ee4a37189dbb3088f862f961e01d",
+  "specification_sha256": "b887a51b63d52d88ce881c6c9a481c2c8f508934b2870e1bbbe28b0297b4dd5f",
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "runtime_seconds": 1.949044841999978
+}

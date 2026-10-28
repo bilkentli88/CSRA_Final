@@ -1,0 +1,25 @@
+{
+  "analysis_status": "POST_HOC_ROBUSTNESS_AFTER_FRESH40_OUTCOMES_INSPECTED",
+  "date": "2026-10-26",
+  "purpose": "Evaluate explicit visible answer-document agreement and bounded-outcome sensitivity of the existing Fresh40 prediction comparison.",
+  "training": "Original 100 FP32 development items only; 900 cases and original 57 groups.",
+  "evaluation": "All 40 existing Fresh40 items, 360 cases, 40 whole-item groups. This is a sensitivity analysis, not a new untouched confirmatory test.",
+  "outcomes": {
+    "log_support": "Original CIE: mean log support(C)-mean log support(P), C-asserting document minus matched P-asserting document.",
+    "bounded_probability": "For each condition and semantic role, exponentiate each saved full-vocabulary answer-label log probability before averaging six permutations. T=(mean_prob_C-mean_prob_P)_Cdoc-(mean_prob_C-mean_prob_P)_Pdoc. No three-candidate renormalization and no clipping."
+  },
+  "common_feature_variants": {
+    "original": "Exact original visible/probe/report feature policies.",
+    "agreement": "Append one Boolean feature to every policy: recorded answer equals the entity asserted by the conflicting document. This feature is invariant to exchanging the factual-reference and irrelevant designations."
+  },
+  "text_forecasts": "Recompute nested group-held-out TF-IDF and frozen-MPNet Ridge training forecasts separately for each outcome, using only development labels and the existing penalty grid; fit final text forecasters on development only.",
+  "decoders": "Original gradient boosting: 100 trees, depth 2, learning rate 0.05, squared-error loss, seed 20261020. Original Ridge: alpha=1, cholesky. Separate StandardScaler and decoder per target/policy. No Fresh40-driven hyperparameter changes.",
+  "observers": "Keep original development-selected observers: Granite->Phi, Phi->Qwen, Qwen->Phi. No reselection for agreement or bounded target.",
+  "policies": ["visible", "source", "observer", "probe", "probe_source", "probe_observer"],
+  "contrasts": ["source_over_visible", "source_over_observer", "source_added_to_probe", "source_alone_over_probe", "observer_added_to_probe", "probe_source_over_probe_observer"],
+  "normalization": "Each target's population variance on the 300 development outcomes for the relevant outcome definition; fixed during bootstrap. Not a percentage error reduction or a fresh-R2 difference.",
+  "uncertainty": "10000 paired bootstrap resamples of 40 whole Fresh40 groups, seed 20261020. Marginal descriptive 95% percentile intervals conditional on fitted pipelines, with no training or target-population uncertainty and no multiplicity adjustment.",
+  "additional_diagnostic": "Range of point gains after leaving out each Fresh40 group, without retraining or selection.",
+  "verification": "Recompute original predictions and require agreement with all saved original policy predictions for both decoders before interpreting the robustness variants.",
+  "preservation": "Read original package only. Write script, plan, results and narrative outside the frozen repository. No language-model inference."
+}

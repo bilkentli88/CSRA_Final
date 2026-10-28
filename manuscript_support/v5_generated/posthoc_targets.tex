@@ -1,0 +1,16 @@
+\begin{table}[tb]
+\caption{Exploratory target-specific source-added-to-probe gains with explicit answer--document agreement. Each cell gives a normalized error reduction and an unadjusted descriptive 95\% interval from paired resamples of the same 40 whole-fact groups used for the pooled estimates. Outcomes use their own development variances; intervals condition on the fitted predictors.}
+\label{tab:csra_posthoc_targets}
+\centering\small
+\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}llccc@{}}
+\toprule
+Outcome & Decoder & Granite & Phi & Qwen \\
+\midrule
+Log support & Boosting & \shortstack{$0.0112$\\$[-0.0033,\,0.0264]$} & \shortstack{$0.1203$\\$[0.0260,\,0.2351]$} & \shortstack{$0.0089$\\$[-0.0483,\,0.0592]$} \\
+Log support & Ridge & \shortstack{$0.1183$\\$[0.0004,\,0.3330]$} & \shortstack{$0.2649$\\$[0.0947,\,0.4754]$} & \shortstack{$-0.0203$\\$[-0.0802,\,0.0162]$} \\
+Bounded & Boosting & \shortstack{$-0.0052$\\$[-0.0300,\,0.0187]$} & \shortstack{$0.0298$\\$[-0.0337,\,0.0905]$} & \shortstack{$0.0099$\\$[-0.0071,\,0.0295]$} \\
+Bounded & Ridge & \shortstack{$-0.0018$\\$[-0.0077,\,0.0054]$} & \shortstack{$0.0896$\\$[0.0127,\,0.1859]$} & \shortstack{$-0.0004$\\$[-0.0036,\,0.0023]$} \\
+\bottomrule
+\end{tabular}
+\end{table}

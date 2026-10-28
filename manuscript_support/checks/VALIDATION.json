@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "numeric_checks": 98,
+  "max_absolute_difference": 6.821210263296962e-13,
+  "fresh_cases_per_algorithm": 360,
+  "fresh_bootstrap_draws": 10000,
+  "factorial_rows": 7200,
+  "factorial_bootstrap_draws": 10000,
+  "orthonormal_point_estimates_independently_refitted": 6,
+  "scope": "Saved score/prediction consistency and CPU statistical checks; model inference not rerun."
+}

@@ -1,0 +1,25 @@
+{
+  "answer_package_SHA256": "38e7d7b4d9edabe4317c1da031c2091039794c4a6034c10c06b2114105d40e45",
+  "package_checksum_files_verified": 16,
+  "metadata_lock_file": "CSRA_v08_POSTREVIEW_ANALYSIS_LOCK_R4_A2.json",
+  "metadata_lock_SHA256": "5212466e65902c8b4ca28d21c31af17e8cf93f8846f843b886d62a32e1fd4703",
+  "canonical_lock_file": "postreview/postreview_analysis_lock.json",
+  "canonical_lock_SHA256": "92e7c26fd9f7a0782b309c419d9ad2b69c8fa5e84d1677a32cee77b54edb9bd2",
+  "checks": {
+    "metadata_matches_review_release": true,
+    "canonical_matches_execution_runner": true,
+    "completion_binds_metadata": true,
+    "completion_binds_canonical": true,
+    "selected_items_match_review_release": true,
+    "review_seal_binding_matches": true,
+    "canonical_binding_alternate_wording_item_ids.json": true,
+    "canonical_binding_analysis_relation_map.json": true,
+    "canonical_binding_empty_result_shells.json": true,
+    "canonical_binding_fold_assignments.json": true,
+    "canonical_binding_final_common_items.csv": true,
+    "all_six_fold_maps_match_frozen_rules": true
+  },
+  "interpretation": "The review release contains the expanded design-metadata lock. The execution runner references a separate compact canonical lock. The recovered technical-completion record explicitly links both documents, and all checked bindings match.",
+  "timing_limit": "The recovered files explain document identity and internal lineage; they do not independently establish an external pre-outcome timestamp.",
+  "scientific_result_change": false
+}

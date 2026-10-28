@@ -1,0 +1,14 @@
+{
+  "status": "PASSED",
+  "inherited_files_byte_identical": 437,
+  "changed_current_documentation_and_entry_points": [
+    "CITATION.cff",
+    "run_reproduction.py",
+    "REPRODUCIBILITY.md",
+    "SHA256SUMS.txt",
+    "README.md",
+    "docs/MANUSCRIPT_OUTPUT_MAP.md"
+  ],
+  "missing_inherited_files": [],
+  "frozen_experimental_inputs_unchanged": true
+}

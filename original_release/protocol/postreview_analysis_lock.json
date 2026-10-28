@@ -1,0 +1,113 @@
+{
+  "study": "CSRA v0.8 R4/A2",
+  "artifact_type": "post-review analysis lock",
+  "status": "FROZEN_BEFORE_ANSWER_INTERVENTIONS",
+  "protocol": {
+    "original_version": "v0.8 R2",
+    "original_protocol_sha256": "13c7aacbf784639524c0eb4ce714e907eec193107f39264c91752005e31e2a64",
+    "approved_amendment": "R4/A2",
+    "r4_builder_bundle_sha256": "828fc49aea8dbe07043a70d648eaa11269db3a59b4ff532d2ca7013783bb87ec"
+  },
+  "activation": {
+    "manifest": "CSRA_v08_ACTIVATION_MANIFEST_R4_A2.json",
+    "sha256": "60375056b7277487c4ee5455489c0031b7cfb6c3844b65aba38cb4e35ebfdc2c"
+  },
+  "review_and_selection": {
+    "sealed_review_file": "csra_v08_blinded_common_review_SEALED.csv",
+    "sealed_review_sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+    "selection_audit_file": "csra_v08_selection_audit.csv",
+    "selection_audit_sha256": "7e749532bd0d284c43dfd97da7858fd3f6f1ab7186ee10104ec1402c89da3686",
+    "final_common_items_file": "csra_v08_final_common_items.csv",
+    "final_common_items_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98",
+    "postreview_gate_manifest_file": "CSRA_v08_POSTREVIEW_SELECTION_GATE_R4_A2.json",
+    "postreview_gate_manifest_sha256": "c77522c52e3c13c3721d9e5354865d4372a3a56e0da81a7b255424d8fc8a2054",
+    "final_common_item_count": 100,
+    "information_gate_threshold": 80,
+    "information_gate_pass": true
+  },
+  "model_targets": {
+    "qwen": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554"
+    },
+    "granite": {
+      "model": "ibm-granite/granite-3.3-2b-instruct",
+      "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0"
+    },
+    "phi": {
+      "model": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083"
+    }
+  },
+  "inference": {
+    "weights": "NF4 4-bit",
+    "double_quantization": true,
+    "compute_dtype": "FP32",
+    "non_quantized_modules_dtype": "FP32",
+    "thinking_reasoning_disabled_where_applicable": true,
+    "batch_size": 8,
+    "oom_fallback_batch_sizes": [
+      4,
+      2
+    ]
+  },
+  "answer_conditions": [
+    "NO_DOC",
+    "P_SKEPTICAL",
+    "C_SKEPTICAL",
+    "P_PROVISIONAL",
+    "C_PROVISIONAL",
+    "I_PROVISIONAL",
+    "P_BARE",
+    "C_BARE"
+  ],
+  "answer_option_mappings": 6,
+  "main_report_conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE",
+    "P_PROVISIONAL",
+    "I_PROVISIONAL"
+  ],
+  "report_observers": [
+    "SELF",
+    "PEER"
+  ],
+  "report_role_mappings": 4,
+  "primary_prediction_conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE"
+  ],
+  "prediction": {
+    "X1": "baseline_margin + frozen_answer_role + strength + analysis_relation",
+    "X2": "X1 + PEER VSA",
+    "X3": "X2 + SELF VSA",
+    "model": "separate Ridge regression per model",
+    "primary_alpha": 1,
+    "cross_fitting": "5-fold item-grouped relation-stratified",
+    "primary_effect": "D_SELF = L_X2 - L_X3",
+    "theta_SELF": "equal-model mean of model-specific delta R^2"
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20260813,
+    "scheme": "relation-stratified paired item bootstrap with full preprocessing/Ridge refit",
+    "minimum_valid_replicates": 1900
+  },
+  "practical_threshold": {
+    "delta": 0.01,
+    "interpretation": {
+      "meaningful_positive": "lower 95% CI > 0.01",
+      "no_practically_meaningful_positive_increment": "upper 95% CI < 0.01",
+      "indeterminate_practical_magnitude": "95% CI includes 0.01"
+    },
+    "not_zero_equivalence_test": true
+  },
+  "design_seeds": {
+    "global_design_seed": 20260812,
+    "bootstrap_seed": 20260813
+  },
+  "constraint": "No scientific analysis rule may be changed in response to answer-intervention, report, CIE, VSA, predictive, or inferential outcomes after this lock.",
+  "procedural_note": "During pre-seal structural validation in this chat, the completed review status distribution was inspected before the SHA-256 seal was written. The uploaded audited file was already fixed and was not edited; no deterministic selection ranks, information-gate result, answer interventions, CIE/VSA outcomes, or inferential results were computed before the seal. All official post-review selection and gate computations recorded in the manifests were recomputed from the sealed file after sealing."
+}

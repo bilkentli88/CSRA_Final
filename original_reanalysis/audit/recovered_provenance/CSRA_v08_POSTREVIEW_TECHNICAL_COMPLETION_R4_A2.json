@@ -1,0 +1,50 @@
+{
+  "artifact_type": "post-review technical completion record",
+  "outputs": {
+    "alternate_wording_item_ids.json": "680d9b47e88773e2a8aa3cd125a38d5fb1559e004d004374786c3b88ba113a7e",
+    "analysis_relation_map.json": "86d809a0a7c24701ee9ea7bb45e48c7ec0a83a49d919e7e627b2c77fa3f32a78",
+    "empty_result_shells.json": "334ec5bb50972e4d23b537691a22dc531d4403268ecaca8739c83c560ac2e3a7",
+    "final_common_items.csv": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98",
+    "fold_assignments.json": "0cc6fdabfec7446ad1f3329147f36f5f325919ce9b33df26552ea90b0e34560f",
+    "postreview_analysis_lock.json": "92e7c26fd9f7a0782b309c419d9ad2b69c8fa5e84d1677a32cee77b54edb9bd2"
+  },
+  "procedure": [
+    "Preserved the exact official csra_v08_final_common_items.csv bytes and SHA-256.",
+    "Generated analysis_relation_map.json using the frozen relation_map_for_selected rule.",
+    "Generated primary and five sensitivity fold assignments using the frozen make_fold_assignments rules.",
+    "Generated the 20% alternate-wording item subset using the frozen alternate_subset rule.",
+    "Generated the frozen empty result shells and a canonical downstream postreview_analysis_lock.json.",
+    "No answer model was loaded or scored and no CIE, VSA, predictive, bootstrap, or inferential outcome was used."
+  ],
+  "reason": "The chat-generated post-review metadata lock recorded the frozen design but did not emit the companion relation-map, fold-assignment, alternate-wording, and empty-shell files expected by the already-frozen v0.8 downstream code.",
+  "scientific_change": false,
+  "status": "COMPLETED_BEFORE_FIRST_ANSWER_INTERVENTION_SCORE",
+  "structural_checks": {
+    "alternate_wording_item_count": 20,
+    "primary_fold_counts": {
+      "0": 20,
+      "1": 20,
+      "2": 20,
+      "3": 20,
+      "4": 20
+    },
+    "selected_item_count": 100,
+    "selected_relation_counts": {
+      "developer": 25,
+      "formation_location": 25,
+      "original_language": 25,
+      "original_network": 25
+    }
+  },
+  "study": "CSRA v0.8 R4/A2",
+  "upstream": {
+    "frozen_analysis_bundle_sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+    "frozen_analysis_spec_sha256": "529b0a2dec87136d8f4c533a3cd69c3e7560ddc002f94030f14a135542e940f0",
+    "official_final_common_items_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98",
+    "postreview_gate_manifest_sha256": "c77522c52e3c13c3721d9e5354865d4372a3a56e0da81a7b255424d8fc8a2054",
+    "prior_chat_metadata_lock_sha256": "5212466e65902c8b4ca28d21c31af17e8cf93f8846f843b886d62a32e1fd4703",
+    "review_seal_manifest_sha256": "e7a83d7034a175de000ead1c900c4016576fa827ca1596d713f647b678cb8a72",
+    "sealed_review_sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+    "selection_audit_sha256": "7e749532bd0d284c43dfd97da7858fd3f6f1ab7186ee10104ec1402c89da3686"
+  }
+}

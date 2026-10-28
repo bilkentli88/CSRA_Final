@@ -1,0 +1,36 @@
+{
+  "study": "CSRA v0.8 R4/A2",
+  "artifact_type": "post-review deterministic selection and information gate",
+  "sealed_review_filename": "csra_v08_blinded_common_review_SEALED.csv",
+  "sealed_review_sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+  "selection_rule": "SHA256(\"20260812|v08|select|\" + relation + \"|\" + item_id), ascending lexicographic hash; retain first 25 APPROVE items per relation; no reallocation",
+  "approval_counts_by_relation": {
+    "developer": 61,
+    "formation_location": 50,
+    "original_language": 35,
+    "original_network": 25
+  },
+  "exclusion_counts_by_relation": {
+    "country_of_origin": 57,
+    "developer": 4,
+    "formation_location": 4,
+    "original_network": 4
+  },
+  "selected_counts_by_relation": {
+    "developer": 25,
+    "formation_location": 25,
+    "original_language": 25,
+    "original_network": 25
+  },
+  "final_common_item_count": 100,
+  "information_gate_threshold": 80,
+  "information_gate_pass": true,
+  "selection_audit_filename": "csra_v08_selection_audit.csv",
+  "selection_audit_sha256": "7e749532bd0d284c43dfd97da7858fd3f6f1ab7186ee10104ec1402c89da3686",
+  "final_common_items_filename": "csra_v08_final_common_items.csv",
+  "final_common_items_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98",
+  "notes": [
+    "No unused capacity was reallocated across relations.",
+    "All computations in this manifest were performed after the SHA-256 review seal was written."
+  ]
+}

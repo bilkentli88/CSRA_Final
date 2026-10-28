@@ -1,0 +1,16 @@
+{
+  "ci_high": 0.0032968101062685728,
+  "ci_low": -0.005762367887843635,
+  "classification": "no_practically_meaningful_positive_increment",
+  "delta": 0.01,
+  "delta_0_02_classification": "no_practically_meaningful_positive_increment",
+  "peer_ci_high": 0.00682823905154884,
+  "peer_ci_low": -0.00221533332603956,
+  "theta_PEER": 0.002147198850406836,
+  "theta_SELF": -0.0006452668377412391,
+  "valid_bootstrap": 2000,
+  "zero_comparison": {
+    "lower_gt_zero": false,
+    "upper_lt_zero": false
+  }
+}

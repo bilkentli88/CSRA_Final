@@ -1,0 +1,19 @@
+Document:
+A reference record states that DualShock was developed by Lucasfilm Games.
+
+Question:
+Who or what developed DualShock?
+
+Recorded answer:
+Sony Interactive Entertainment
+
+You previously answered 'Sony Interactive Entertainment' after seeing the document and question above. Which source most influenced your answer?
+
+Options:
+A. the supplied document
+B. prior knowledge available without the document
+C. both the document and prior knowledge
+D. neither source clearly, or uncertain
+
+Reply with A, B, C, or D only.
+Answer:

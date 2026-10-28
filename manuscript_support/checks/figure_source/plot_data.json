@@ -1,0 +1,2110 @@
+{
+  "results": {
+    "gradient_boosting": {
+      "contrasts": {
+        "self_added_to_probe": {
+          "by_target": {
+            "granite": 0.012202552302909815,
+            "phi": 0.12128037656641115,
+            "qwen": 0.08216681842693531
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            0.011510447891246478,
+            0.1439281195739458
+          ],
+          "normalized_MSE_reduction": 0.0718832490987521,
+          "positive_targets": 3,
+          "practical_development_screen": true
+        },
+        "self_over_probe_cost_comparison": {
+          "by_target": {
+            "granite": -0.14016213422365303,
+            "phi": 0.10911458990782667,
+            "qwen": 0.06485144882133141
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            -0.07397720597598667,
+            0.11012332717710831
+          ],
+          "normalized_MSE_reduction": 0.011267968168501688,
+          "positive_targets": 2,
+          "practical_development_screen": true
+        },
+        "self_over_selected_observer": {
+          "by_target": {
+            "granite": -0.16698687661782255,
+            "phi": 0.17117189944934397,
+            "qwen": -0.005982936653622861
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            -0.05147885399627212,
+            0.05034673080353697
+          ],
+          "normalized_MSE_reduction": -0.0005993046073671466,
+          "positive_targets": 1,
+          "practical_development_screen": false
+        },
+        "self_over_visible": {
+          "by_target": {
+            "granite": 0.23997568402509076,
+            "phi": 0.6260108461026964,
+            "qwen": 0.6038117566579951
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            0.3588590088099818,
+            0.6364018197632958
+          ],
+          "normalized_MSE_reduction": 0.4899327622619274,
+          "positive_targets": 3,
+          "practical_development_screen": true
+        }
+      },
+      "target_metrics": {
+        "granite": {
+          "observer": {
+            "MSE": 17.012055731895206,
+            "R2_fresh": 0.8003868042310489
+          },
+          "probe": {
+            "MSE": 20.265011774982018,
+            "R2_fresh": 0.7622178162092736
+          },
+          "probe_observer": {
+            "MSE": 17.516088625504192,
+            "R2_fresh": 0.7944726679119837
+          },
+          "probe_self": {
+            "MSE": 18.785244861602035,
+            "R2_fresh": 0.7795808561162696
+          },
+          "reference_ceiling": {
+            "MSE": 22.19211909428445,
+            "R2_fresh": 0.7396058487517205
+          },
+          "self": {
+            "MSE": 37.26205334336173,
+            "R2_fresh": 0.5627807911047241
+          },
+          "visible": {
+            "MSE": 66.36318468220297,
+            "R2_fresh": 0.221318835031592
+          }
+        },
+        "phi": {
+          "observer": {
+            "MSE": 35.29513517535249,
+            "R2_fresh": 0.5202231232313695
+          },
+          "probe": {
+            "MSE": 30.219857386173786,
+            "R2_fresh": 0.5892128271757755
+          },
+          "probe_observer": {
+            "MSE": 25.901733094386564,
+            "R2_fresh": 0.6479103268714043
+          },
+          "probe_self": {
+            "MSE": 20.30109671159224,
+            "R2_fresh": 0.7240413805790626
+          },
+          "reference_ceiling": {
+            "MSE": 37.41716874484941,
+            "R2_fresh": 0.4913777134230969
+          },
+          "self": {
+            "MSE": 21.296060032953953,
+            "R2_fresh": 0.7105165593126004
+          },
+          "visible": {
+            "MSE": 72.49355741856658,
+            "R2_fresh": 0.014574320474184055
+          }
+        },
+        "qwen": {
+          "observer": {
+            "MSE": 85.20357004577043,
+            "R2_fresh": 0.6112819459518705
+          },
+          "probe": {
+            "MSE": 119.92873718316623,
+            "R2_fresh": 0.4528578401439399
+          },
+          "probe_observer": {
+            "MSE": 85.795828183387,
+            "R2_fresh": 0.6085799297027297
+          },
+          "probe_self": {
+            "MSE": 79.64806722475683,
+            "R2_fresh": 0.6366274126345837
+          },
+          "reference_ceiling": {
+            "MSE": 78.45614965822844,
+            "R2_fresh": 0.6420652115061312
+          },
+          "self": {
+            "MSE": 88.13658730675824,
+            "R2_fresh": 0.5979008545073652
+          },
+          "visible": {
+            "MSE": 384.14344935382354,
+            "R2_fresh": -0.7525497350397352
+          }
+        }
+      }
+    },
+    "ridge": {
+      "contrasts": {
+        "self_added_to_probe": {
+          "by_target": {
+            "granite": 0.182960649860235,
+            "phi": 0.2858581267151384,
+            "qwen": 0.03738147332459637
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            0.04926632249188819,
+            0.34000357879250376
+          ],
+          "normalized_MSE_reduction": 0.16873341663332325,
+          "positive_targets": 3,
+          "practical_development_screen": true
+        },
+        "self_over_probe_cost_comparison": {
+          "by_target": {
+            "granite": 0.7016558514261161,
+            "phi": 0.38399605998880293,
+            "qwen": 0.07878712208845995
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            -0.06854510895511905,
+            1.1603346662960528
+          ],
+          "normalized_MSE_reduction": 0.3881463445011264,
+          "positive_targets": 3,
+          "practical_development_screen": true
+        },
+        "self_over_selected_observer": {
+          "by_target": {
+            "granite": -0.3387278973472514,
+            "phi": 0.14919698336330708,
+            "qwen": -0.07602922150073294
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            -0.17573552874609147,
+            1.7618885242086286e-05
+          ],
+          "normalized_MSE_reduction": -0.08852004516155906,
+          "positive_targets": 1,
+          "practical_development_screen": false
+        },
+        "self_over_visible": {
+          "by_target": {
+            "granite": 0.11659453417596219,
+            "phi": 0.6580897405023739,
+            "qwen": 0.3789133896029216
+          },
+          "descriptive_95pct_cluster_bootstrap_interval": [
+            0.25429569492853393,
+            0.538028717263017
+          ],
+          "normalized_MSE_reduction": 0.3845325547604192,
+          "positive_targets": 3,
+          "practical_development_screen": true
+        }
+      },
+      "target_metrics": {
+        "granite": {
+          "observer": {
+            "MSE": 22.919658477409506,
+            "R2_fresh": 0.7310691696106403
+          },
+          "probe": {
+            "MSE": 149.08387481811272,
+            "R2_fresh": -0.7492952738373415
+          },
+          "probe_observer": {
+            "MSE": 111.47713492257304,
+            "R2_fresh": -0.30803163990001603
+          },
+          "probe_self": {
+            "MSE": 126.8967856425871,
+            "R2_fresh": -0.48896014180306735
+          },
+          "reference_ceiling": {
+            "MSE": 37.318878029376734,
+            "R2_fresh": 0.5621140311697237
+          },
+          "self": {
+            "MSE": 63.99617449559599,
+            "R2_fresh": 0.24909246070108915
+          },
+          "visible": {
+            "MSE": 78.1352439026903,
+            "R2_fresh": 0.08318982823688859
+          }
+        },
+        "phi": {
+          "observer": {
+            "MSE": 39.00651049585599,
+            "R2_fresh": 0.4697733360031624
+          },
+          "probe": {
+            "MSE": 58.20925304659133,
+            "R2_fresh": 0.20874495912878832
+          },
+          "probe_observer": {
+            "MSE": 45.7833178043916,
+            "R2_fresh": 0.3776542541863983
+          },
+          "probe_self": {
+            "MSE": 34.830711306831226,
+            "R2_fresh": 0.5265361698319543
+          },
+          "reference_ceiling": {
+            "MSE": 58.87527263876787,
+            "R2_fresh": 0.1996915641435123
+          },
+          "self": {
+            "MSE": 26.804625794914053,
+            "R2_fresh": 0.6356370479120201
+          },
+          "visible": {
+            "MSE": 80.6256545815967,
+            "R2_fresh": -0.09596760432859197
+          }
+        },
+        "qwen": {
+          "observer": {
+            "MSE": 87.08854065315444,
+            "R2_fresh": 0.6026822815710631
+          },
+          "probe": {
+            "MSE": 162.984214352986,
+            "R2_fresh": 0.25642896641745916
+          },
+          "probe_observer": {
+            "MSE": 104.24234707738177,
+            "R2_fresh": 0.5244227174570011
+          },
+          "probe_self": {
+            "MSE": 144.65868078147378,
+            "R2_fresh": 0.3400342161210249
+          },
+          "reference_ceiling": {
+            "MSE": 112.61028660171633,
+            "R2_fresh": 0.4862462752428496
+          },
+          "self": {
+            "MSE": 124.3603741876253,
+            "R2_fresh": 0.4326397047806493
+          },
+          "visible": {
+            "MSE": 310.1152261050036,
+            "R2_fresh": -0.41481615333108657
+          }
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 16.585689881022518
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 1.945108533476816
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.7388080364607941
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 10.352226305537139
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 3.1965874331805626
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 1.8825299925289656
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 5.509756088256836
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.0833533604939767
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 1.5638949076334612
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.98182587175893
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 5.718210413248169
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.282757938598479
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 12.196190536734926
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 4.557087989298452
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 1.7807044829557217
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 5.704479853312176
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.7676703135172538
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 1.2434476216634103
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 29.991203705669324
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 16.15946728520794
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 8.724271533684185
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 15.020244537023398
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 9.20131343029637
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 4.834313119704044
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 5.240636189778645
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.211672782897949
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.49296506245931226
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 27.62838055717278
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": -6.124821389876539
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": -11.838967925878022
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 12.335998830488885
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 4.980191642115642
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 0.40513232899593454
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 16.23964553933922
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 7.019573748111668
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.3508145411809096
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 29.365885775048998
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 9.375700656423078
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 4.3946705435326585
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 21.327138779232882
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 13.563734077212453
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 8.348886521787183
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 11.33153509176297
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.3835433324178084
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.4149484634399414
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 26.36063316148826
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.394358399263561
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.227232018801411
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 13.068795759050772
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 7.719350764921122
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 2.1339077962056763
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 16.553780543702786
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.1582905451456718
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -1.5292515158653153
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 15.67759538865092
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.188884953043345
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.963842868314714
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 25.344916489941475
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 21.805684928885363
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 13.84735432645478
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 2.5446640650431327
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": -0.3460585276285819
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -0.9814910888671875
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 6.680335453489153
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.6441244583663757
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.4640455354004498
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 14.683319103762795
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 11.744312753437194
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 4.810935120014618
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 6.187559445699055
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.5132354100545236
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -2.1580378214518205
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 14.486902764616541
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 1.2249936366567145
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.8494932928732233
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 10.389518591565167
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 4.427283469791597
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 1.630419226720731
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 3.1192398071289062
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.6796239217122384
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 1.2755012512207031
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.772412183131717
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 13.86742810435347
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 6.060084338473719
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 24.951945126601764
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 18.35774857584147
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 8.227810126993061
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 2.8219292958577498
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.2464494705200195
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 1.1343488693237305
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 23.182214244797933
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 5.604022065345209
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.814426802183638
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 15.646954282244224
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 10.021698675670146
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 5.265637508993071
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 18.55415653685255
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 0.9690103530883789
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -3.1586348414421046
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.48893555481709
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.6685824769726114
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.7432843826566877
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 18.033065126015266
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 9.937474374966769
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 5.326903655495698
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 7.33778190612793
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.1746581395467146
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 1.5015166600545236
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 17.696893714515078
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 9.276681934956287
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.5774094611563974
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 0.1935673008362453
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": -1.1791636571288109
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": -1.8801930795113246
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 5.73582835567989
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.945196166565627
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -0.574095624099737
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.534277742582468
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.140427065462669
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": -1.5220314370635604
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 20.282039868726617
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 7.989985153467083
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": -0.22113422180215514
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 24.305239053524268
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": -9.283686792104277
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -9.104513768665157
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 7.78338421462316
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": -0.1132207289483631
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": -2.2716015736647623
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 0.3175442392688037
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": -1.9821096712451745
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": -3.8616886773913084
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 10.115084985891976
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 6.8788722356160505
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 4.513791402180988
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 23.271325321559367
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 5.368993242841194
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": -0.555655147381307
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 13.72323742901305
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 8.592672834648209
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 2.3938808116751407
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 26.937518696552917
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 4.141380349795018
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -4.105260868849776
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 26.019009730541335
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 3.6606228571223864
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.09249469818496614
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 12.319950536645289
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 6.905604012504529
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 0.2042369622116289
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 44.27415245771411
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 13.291276506437955
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 7.641274696669726
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 11.062553939581676
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 1.52537424818426
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.14911915592589686
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 9.007138079709573
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 4.194649895430606
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 0.5764223992106654
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 6.90594991048177
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.1910829544067383
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -1.5664208730061837
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 23.170689003544794
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 6.774727509730231
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.44670409349904183
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 15.720866829677107
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 13.18885160023198
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 5.864779820816086
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 53.53169816732407
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 13.870528068393282
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 5.199728879698142
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 21.97277658309743
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 8.28553861150825
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 5.519682968714734
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 20.031213741183215
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 16.273693697540086
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 8.641256908293144
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 12.351690033082072
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.392119725545246
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.9259812037150077
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 14.259523160746236
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.0738705947599865
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.297419724506046
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 19.462917735844407
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 7.030236587512718
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 2.9913634885043994
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 3.413892428080242
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.6110417048136405
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.9551378885904924
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 15.877662739304167
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.957966734108293
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.4488997246129038
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 11.993122117510513
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 3.2982329198075604
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 2.0934771202306983
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 4.873133341471352
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.581223487854004
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.9027624130249023
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 12.602203713863371
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.0746290049652707
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.0230231891121857
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 19.512505693827432
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 7.420142162125256
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 3.563498081757187
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 3.700000762939453
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.1480941772460938
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.193224271138508
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 28.642923338230805
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 17.020705507457627
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 6.243388419986028
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 27.70729722785351
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 23.457545534002293
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 9.94315532988306
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 34.636716124559214
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.6314034263286494
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -0.12229629357656435
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 13.553672306600976
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 3.577001192662161
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.0845379805311204
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 23.742483674270566
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 5.100794447993394
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": -4.051951767425636
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 3.979983329772949
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.5754667917887346
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 3.0264164606730155
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 18.48713791728551
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 3.7740733172019354
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.4911663984184997
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 16.019721923678997
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 4.909575179733414
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 1.5622304520111356
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 4.342753092447914
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.247793515523277
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.24452336629231652
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 5.28636592096033
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.0693623802405163
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.5915337512524275
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 20.051458122543938
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 8.59490567007045
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 3.2150911260376542
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 4.176558494567871
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.0489613215128593
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.055596987406414
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 11.427700044790981
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 3.2387824453023004
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.2745952684890636
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 14.224876379837042
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 5.554863533007847
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 2.557001215103204
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 3.421078681945801
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.3466374079386405
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.1712779998779297
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.57964091990228
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.032594870624962
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.74136695464464
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 24.117830674557503
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 10.872368569186923
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 3.168168531194776
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 16.83344916239123
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 5.646569569905598
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 3.2160371144612654
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 17.608987972251878
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 3.0127526290959104
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.549126252969776
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 13.351598141644445
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 3.2682248406974086
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 1.8166097284241314
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 4.031673749287922
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.798664093017578
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.157526334126789
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 16.61364297834636
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 2.8569152203940593
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.3311291820922033
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 24.614289572592497
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 23.15407384489481
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 18.62527068234461
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 57.214826583862305
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 35.97202837762114
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 5.768430606585147
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 20.474529704395763
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 1.9531486621302374
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.5926500168722342
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 26.46048027458922
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 20.959240152763414
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 8.760064540751046
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 40.41255438327759
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.8616523941357919
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -3.23781458513114
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 11.413175339894451
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 5.224730963959097
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.416087631284503
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 24.06600448212733
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 19.90950252085228
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 12.282625047694333
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 53.34635480244955
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 27.074611036727827
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 17.698523152073147
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 28.53444034100657
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.733783749167589
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 2.9892165674309563
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 23.978233448195777
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 14.955974417122889
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 6.4127666182915455
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 39.93916224190359
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 3.9469095865885393
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 2.0598114728887467
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 26.613287934092376
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 9.284969547454239
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 6.758286576426296
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 26.069671654014805
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 22.8068897714899
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 15.924590446227132
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 31.516825975590148
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 5.679765701293945
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 7.6958545446195785
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 22.285813806798764
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.501536151850813
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 0.21298752486685046
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 29.028533141444615
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 23.928696798549332
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 14.569824362810323
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 10.56566147940708
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 1.1926423294634496
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -2.063569278767698
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 26.638721396602325
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 4.2261850061401365
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 1.6248204512121447
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 22.49398645899555
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 13.713633678403161
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 6.767970284920769
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 7.2020171483357736
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 2.0663318634033203
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 0.14414501190185547
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 27.0296870488977
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 7.574824184018931
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.6719769111532514
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 28.307566265950754
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 26.18766011862408
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 14.549308803667373
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 59.066748301188156
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 32.38208233285657
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 19.8259596803848
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 19.815181219364945
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 9.075067848255609
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.7795203530008603
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 26.719793122670126
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 22.296497192062056
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 10.821368633795524
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 59.17279497782389
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 51.5737870534261
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": 25.987732438225372
+    },
+    {
+      "target": "granite",
+      "strength": "BARE",
+      "Y": 27.46774942960489
+    },
+    {
+      "target": "granite",
+      "strength": "PROVISIONAL",
+      "Y": 9.095446037681388
+    },
+    {
+      "target": "granite",
+      "strength": "SKEPTICAL",
+      "Y": 3.002335086799575
+    },
+    {
+      "target": "phi",
+      "strength": "BARE",
+      "Y": 26.16048556805405
+    },
+    {
+      "target": "phi",
+      "strength": "PROVISIONAL",
+      "Y": 21.67592497138374
+    },
+    {
+      "target": "phi",
+      "strength": "SKEPTICAL",
+      "Y": 11.07767847309242
+    },
+    {
+      "target": "qwen",
+      "strength": "BARE",
+      "Y": 38.866704702377305
+    },
+    {
+      "target": "qwen",
+      "strength": "PROVISIONAL",
+      "Y": 0.8689391612950566
+    },
+    {
+      "target": "qwen",
+      "strength": "SKEPTICAL",
+      "Y": -6.691288654382028
+    }
+  ]
+}

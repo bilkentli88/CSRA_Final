@@ -1,0 +1,4 @@
+learner,representation,answer_included,estimate,ci_low,ci_high,replicates
+Ridge,four_role,False,0.0070575836396247205,-0.007877923902578896,0.022886615829557443,10000
+category_contrast,hedging_minus_ownership,False,0.0508784841209886,0.041200399222023246,0.06133185242766336,10000
+category_contrast,absolute_hedging_minus_absolute_ownership,False,0.007742599615004023,-0.00624470008862773,0.02139516031770513,10000

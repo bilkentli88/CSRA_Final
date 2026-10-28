@@ -1,0 +1,109 @@
+{
+  "plan_id": "CSRA-MAIN-DESIGN-20261020",
+  "status": "PLANNING_ONLY_NOT_EXECUTED",
+  "development_items": 100,
+  "fresh_reference_items": 600,
+  "fresh_candidate_sizes": [
+    400,
+    600,
+    800
+  ],
+  "relations": [
+    "developer",
+    "formation_location",
+    "original_language",
+    "original_network"
+  ],
+  "reference_per_relation": 150,
+  "answer_conditions": [
+    "NO_DOC",
+    "P_SKEPTICAL",
+    "P_PROVISIONAL",
+    "P_BARE",
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE",
+    "I_PROVISIONAL"
+  ],
+  "answer_permutations": 6,
+  "report_strengths": 3,
+  "report_rotations": 4,
+  "ownership_cues": [
+    "SELF_PRESENTED",
+    "OTHER_PRESENTED"
+  ],
+  "precision_bridge_items": 100,
+  "main_precision": "unquantized_FP32_inference_from_released_checkpoint",
+  "bridge_precision": "NF4_double_quant_FP32_compute",
+  "max_prompt_tokens": 512,
+  "models": {
+    "granite": {
+      "chat_template_kwargs": {
+        "thinking": false
+      },
+      "model_id": "ibm-granite/granite-3.3-2b-instruct",
+      "revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+      "tokenizer_id": "ibm-granite/granite-3.3-2b-instruct",
+      "tokenizer_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+      "family": "granite",
+      "approx_parameters_billion": 2.0,
+      "development_target_allowed": true
+    },
+    "phi": {
+      "chat_template_kwargs": {},
+      "model_id": "microsoft/Phi-4-mini-instruct",
+      "revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "tokenizer_id": "microsoft/Phi-4-mini-instruct",
+      "tokenizer_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+      "family": "phi",
+      "approx_parameters_billion": 3.8,
+      "development_target_allowed": true
+    },
+    "qwen": {
+      "chat_template_kwargs": {},
+      "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "tokenizer_id": "Qwen/Qwen3-4B-Instruct-2507",
+      "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "family": "qwen",
+      "approx_parameters_billion": 4.0,
+      "development_target_allowed": true
+    },
+    "mistral": {
+      "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "tokenizer_id": "mistralai/Mistral-7B-Instruct-v0.3",
+      "revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "chat_template_kwargs": {},
+      "family": "mistral",
+      "approx_parameters_billion": 7.248023552,
+      "development_target_allowed": false
+    }
+  },
+  "encoder": {
+    "model_id": "sentence-transformers/all-mpnet-base-v2",
+    "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+    "max_tokens": 384,
+    "pooling": "attention-mask mean, then L2 normalization"
+  },
+  "scoring_versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.13.1",
+    "bitsandbytes": "0.50.0",
+    "accelerate": "1.14.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  },
+  "analysis_versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0"
+  },
+  "seed": 20261020,
+  "primary_bootstrap_draws": 10000,
+  "primary_tests": 2,
+  "primary_interval_level": 0.975,
+  "engineering_halfwidth_goal": 0.01,
+  "independent_registration_required": false
+}

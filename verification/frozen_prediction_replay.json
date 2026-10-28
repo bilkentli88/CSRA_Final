@@ -1,0 +1,7 @@
+{
+  "status": "PASSED",
+  "frozen_policy_predictions_replayed": 5040,
+  "maximum_absolute_prediction_or_error_difference": 0.0,
+  "predictor_refitting": false,
+  "new_model_inference": false
+}

@@ -1,0 +1,8 @@
+{
+  "study": "CSRA v0.8 R4/A2",
+  "artifact_type": "blinded factual review seal",
+  "sealed_filename": "csra_v08_blinded_common_review_SEALED.csv",
+  "sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+  "row_count": 240,
+  "note": "Exact byte copy of the completed uploaded audited review file. No post-review selection information is included in this seal manifest."
+}

@@ -1,0 +1,144 @@
+{
+  "title": "Source Reports Under Factual Conflict: Do Answering Models Have a Predictive Advantage?",
+  "author": "Aykut T. Altay",
+  "target": "Knowledge and Information Systems",
+  "manuscript_revision": "V8",
+  "manuscript_tex_sha256": "f8191c1d8ae71e6be13cb403dd47e769bcbd9f20f749fcaaf157d2490887f457",
+  "manuscript_pdf_sha256": "0a9020a5c5bb64ba00338a53829fd54ce906d918c2880bbd4605cc1e08d4f059",
+  "tables": [
+    {
+      "number": 1,
+      "display_label": "Table 1",
+      "label": "tab:retention_stages",
+      "reference": "paper/reference/tables/retention_stages.tex"
+    },
+    {
+      "number": 2,
+      "display_label": "Table 2",
+      "label": "tab:scalar_prediction",
+      "reference": "paper/reference/tables/scalar_prediction.tex"
+    },
+    {
+      "number": 3,
+      "display_label": "Table 3",
+      "label": "tab:alignment",
+      "reference": "paper/reference/tables/alignment.tex"
+    },
+    {
+      "number": 4,
+      "display_label": "Table 4",
+      "label": "tab:factorial_primary",
+      "reference": "paper/reference/tables/factorial_primary.tex"
+    },
+    {
+      "number": 5,
+      "display_label": "Table 5",
+      "label": "tab:factorial_expanded",
+      "reference": "paper/reference/tables/factorial_expanded.tex"
+    },
+    {
+      "number": 6,
+      "display_label": "Table 6",
+      "label": "tab:policy_access",
+      "reference": "paper/reference/tables/policy_access.tex"
+    },
+    {
+      "number": 7,
+      "display_label": "Table 7",
+      "label": "tab:fresh_primary",
+      "reference": "paper/reference/tables/fresh_primary.tex"
+    },
+    {
+      "number": 8,
+      "display_label": "Table 8",
+      "label": "tab:fresh_by_target",
+      "reference": "paper/reference/tables/fresh_by_target.tex"
+    },
+    {
+      "number": 9,
+      "display_label": "Table 9",
+      "label": "tab:csra_posthoc_robustness",
+      "reference": "paper/reference/tables/csra_posthoc_robustness.tex"
+    },
+    {
+      "number": 10,
+      "display_label": "Table 10",
+      "label": "tab:csra_posthoc_targets",
+      "reference": "paper/reference/tables/csra_posthoc_targets.tex"
+    },
+    {
+      "number": 11,
+      "display_label": "Appendix Table 11",
+      "label": "tab:all_roles",
+      "reference": "paper/reference/tables/all_roles.tex"
+    },
+    {
+      "number": 12,
+      "display_label": "Appendix Table 12",
+      "label": "tab:descriptives",
+      "reference": "paper/reference/tables/descriptives.tex"
+    },
+    {
+      "number": 13,
+      "display_label": "Appendix Table 13",
+      "label": "tab:full_role_prediction",
+      "reference": "paper/reference/tables/full_role_prediction.tex"
+    },
+    {
+      "number": 14,
+      "display_label": "Appendix Table 14",
+      "label": "tab:correlations",
+      "reference": "paper/reference/tables/correlations.tex"
+    },
+    {
+      "number": 15,
+      "display_label": "Appendix Table 15",
+      "label": "tab:controls",
+      "reference": "paper/reference/tables/controls.tex"
+    },
+    {
+      "number": 16,
+      "display_label": "Appendix Table 16",
+      "label": "tab:historical_alignment",
+      "reference": "paper/reference/tables/historical_alignment.tex"
+    },
+    {
+      "number": 17,
+      "display_label": "Appendix Table 17",
+      "label": "tab:original_sensitivity",
+      "reference": "paper/reference/tables/original_sensitivity.tex"
+    },
+    {
+      "number": 18,
+      "display_label": "Appendix Table 18",
+      "label": "tab:alternative_targets",
+      "reference": "paper/reference/tables/alternative_targets.tex"
+    },
+    {
+      "number": 19,
+      "display_label": "Appendix Table 19",
+      "label": "tab:development_results",
+      "reference": "paper/reference/tables/development_results.tex"
+    },
+    {
+      "number": 20,
+      "display_label": "Appendix Table 20",
+      "label": "tab:fresh_ridge",
+      "reference": "paper/reference/tables/fresh_ridge.tex"
+    },
+    {
+      "number": 21,
+      "display_label": "Appendix Table 21",
+      "label": "tab:frozen_models",
+      "reference": "paper/reference/tables/frozen_models.tex"
+    },
+    {
+      "number": 22,
+      "display_label": "Appendix Table 22",
+      "label": "tab:csra_posthoc_absolute",
+      "reference": "paper/reference/tables/csra_posthoc_absolute.tex"
+    }
+  ],
+  "figures": 6,
+  "binding_scope": "V8 citation-only update; all numerical tables, equations and scientific records unchanged."
+}

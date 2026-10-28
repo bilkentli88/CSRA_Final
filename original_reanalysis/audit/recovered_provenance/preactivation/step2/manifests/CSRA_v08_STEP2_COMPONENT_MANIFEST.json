@@ -1,0 +1,21 @@
+{
+  "artifact": "step2_component_manifest",
+  "components": {
+    "CSRA_v08_Master_FROZEN.ipynb": "00a94a09e3d6f5d5591f45721c472b44b4acc99f05663c43d04beb54e3e92626",
+    "README_PREACTIVATION_STEP2.md": "1298ae0059e7c9e5ffafbd76c6f1fbfde3f979c122396f9ab6da7ef548d41793",
+    "config/csra_v08_analysis_spec.json": "529b0a2dec87136d8f4c533a3cd69c3e7560ddc002f94030f14a135542e940f0",
+    "config/csra_v08_environment_lock.json": "5aad9de33fc5ad45f2369bec8d48c4f667c0cd16967d557ce0469920204f3473",
+    "config/csra_v08_model_tokenizer_lock.json": "af4e77b27adfedeea925ab801c750dd32982c303aa571ca81171e544fed95ab8",
+    "inputs/csra_v05_fictional_controls.jsonl": "84677b428c921cb46429b80f7071f10874621b115ce8037f668a4f56c899e679",
+    "prompts/csra_v08_prompt_bundle.json": "1c392ee6b2c396fcaee029411d3a428f8364223bd2e6f90f8c0b7db7ec922f09",
+    "requirements_colab.txt": "5e135769d0d9350865e86592345ee58acd197c74c2a0c7b2d7730225e1f1a9bb",
+    "src/csra_v08_activation.py": "9658554b20e13e2cf9655d2f092ee712aa022f794f2171e662e8c3b1cf5350e9",
+    "src/csra_v08_analysis.py": "7b582ff2d39aa1c49c6bd2dab282ba581f938944c882d14c3621fc1038c0a3b7",
+    "src/csra_v08_common.py": "97a7933c2679687010eab2a87233ff280498755353f14f488b52fe5a9446783d",
+    "src/csra_v08_postscreen.py": "73a13278322ed8ac875db98c728e8a3e3c000db49fa3a0a54c47fee0a0a6a9fe",
+    "src/csra_v08_scoring.py": "ec3b8f62616fdbf83f6792d1d43a23b9c5d3d1575eca20700425323030256c57",
+    "tests/synthetic_smoke_test.py": "f556014a37f28a748631cd3cd7ac448e919b27c0de64aa470096a7cb9c7d15e9"
+  },
+  "protocol_id": "CSRA-0.8",
+  "status": "FROZEN_PRE_ACTIVATION"
+}

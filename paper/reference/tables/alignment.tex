@@ -1,0 +1,17 @@
+\begin{table}[tbp]
+\centering\small
+\caption{Exploratory alignment contrasts with standardization re-estimated within each of 2,000 paired item-bootstrap draws. Intervals are marginal 95\% percentile intervals. $H$ compares Qwen with the average of Granite and Phi.}
+\label{tab:alignment}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Model & $\Delta^{\mathrm{corr}}$ & $\Delta^{\mathrm{cond}}$\\
+\midrule
+Qwen & \shortstack{$-0.0114$\\$[-0.0255,\,0.0023]$} & \shortstack{$0.0499$\\$[-0.0086,\,0.0995]$}\\[5pt]
+Granite & \shortstack{$0.0623$\\$[0.0287,\,0.0980]$} & \shortstack{$0.1731$\\$[0.0279,\,0.3338]$}\\[5pt]
+Phi & \shortstack{$0.0216$\\$[0.0034,\,0.0420]$} & \shortstack{$0.0013$\\$[-0.0958,\,0.1057]$}\\[5pt]
+Equal-model mean & \shortstack{$0.0242$\\$[0.0123,\,0.0364]$} & \shortstack{$0.0748$\\$[0.0089,\,0.1450]$}\\[5pt]
+\(H\) & \shortstack{$-0.0534$\\$[-0.0793,\,-0.0274]$} & \shortstack{$-0.0373$\\$[-0.1561,\,0.0703]$}\\[5pt]
+\bottomrule
+\end{tabular}
+\end{table}

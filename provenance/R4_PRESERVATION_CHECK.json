@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "comparison": "R4 against the supplied R3 ZIP",
+  "preexisting_scientific_files_checked": 372,
+  "preexisting_scientific_files_changed": 0,
+  "authorized_current_documentation_files": [
+    "CHANGELOG.md",
+    "CITATION.cff",
+    "README.md",
+    "REPRODUCIBILITY.md",
+    "SHA256SUMS.txt",
+    "VALIDATION.json",
+    "docs/DATA_DICTIONARY.md",
+    "docs/GITHUB_UPLOAD.md",
+    "docs/PROVENANCE_AND_SCOPE.md",
+    "provenance/SOURCES.json"
+  ],
+  "scope": "Pre-existing original release, reanalysis, all study records, and manuscript support remain byte-identical. Current release documentation and inventory may differ."
+}

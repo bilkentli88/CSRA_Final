@@ -1,0 +1,8 @@
+BARE:
+A reference record states that {claim}
+
+PROVISIONAL:
+Source status: provisionally credible, but not independently verified. Claim: {claim}
+
+SKEPTICAL:
+Source status: unverified and potentially inaccurate. Claim: {claim}

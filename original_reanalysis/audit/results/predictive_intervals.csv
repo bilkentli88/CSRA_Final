@@ -1,0 +1,17 @@
+case,model_key,effect,estimate,ci_low,ci_high,valid_draws,threshold,classification
+with_recorded_answer,qwen,SELF,0.0010433193283758135,-0.002255230560233787,0.004961678154372164,2000,0.01,below_practical_threshold
+with_recorded_answer,qwen,PEER,0.0028825167435740096,-0.002369595553517132,0.009729727780088269,2000,0.01,below_practical_threshold
+with_recorded_answer,granite,SELF,-0.002070323904502583,-0.013388989340320954,0.008354148690285309,2000,0.01,below_practical_threshold
+with_recorded_answer,granite,PEER,0.0013232793826810085,-0.00330999900070751,0.006379978883991441,2000,0.01,below_practical_threshold
+with_recorded_answer,phi,SELF,-0.0009087959370964738,-0.007878880176582314,0.005393227253931733,2000,0.01,below_practical_threshold
+with_recorded_answer,phi,PEER,0.002235800424965406,-0.006820129290970396,0.014809944502812734,2000,0.01,indeterminate_practical_magnitude
+with_recorded_answer,equal_model_mean,SELF,-0.0006452668377410811,-0.005762367887843663,0.003296810106268698,2000,0.01,below_practical_threshold
+with_recorded_answer,equal_model_mean,PEER,0.0021471988504068082,-0.002215333326039267,0.006828239051549082,2000,0.01,below_practical_threshold
+without_recorded_answer,qwen,SELF,6.775149376180012e-05,-0.005413017291421982,0.004852482547347865,2000,0.01,below_practical_threshold
+without_recorded_answer,qwen,PEER,0.115792343915069,0.08041503603672848,0.15970098364157354,2000,0.01,meaningful_positive
+without_recorded_answer,granite,SELF,0.03740455930599912,0.011857674701412618,0.07429297541780883,2000,0.01,meaningful_positive
+without_recorded_answer,granite,PEER,0.03927650093180421,0.01083276671766829,0.07186377266694464,2000,0.01,meaningful_positive
+without_recorded_answer,phi,SELF,0.007598869607805536,-0.003838509027723075,0.02210920290246475,2000,0.01,indeterminate_practical_magnitude
+without_recorded_answer,phi,PEER,0.07152795799611292,0.03271676153622354,0.12575336539777215,2000,0.01,meaningful_positive
+without_recorded_answer,equal_model_mean,SELF,0.015023726802522152,0.005248754919542149,0.026449070612838122,2000,0.01,indeterminate_practical_magnitude
+without_recorded_answer,equal_model_mean,PEER,0.07553226761432871,0.05502780164835318,0.10211843857070842,2000,0.01,meaningful_positive

@@ -1,0 +1,4 @@
+model_key,context_answer_share,document_report_share,mean_VSA
+qwen,1.0,1.0,29.85212559401989
+granite,1.0,0.45,7.298145016896524
+phi,1.0,1.0,10.599633243729567

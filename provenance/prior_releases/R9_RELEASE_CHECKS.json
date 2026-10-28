@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "date": "2026-10-28",
+  "repository_package": "R9",
+  "release_version": "0.11.3",
+  "manuscript_revision": "V9 Neurocomputing",
+  "current_checks": {
+    "scientific_files_byte_identical_to_R8": 343,
+    "paper_route": "PASSED",
+    "tables_rebuilt": 22,
+    "displayed_numeric_entries_checked": 598,
+    "maximum_displayed_numeric_difference": 0,
+    "figures_rebuilt": 6,
+    "raw_jobs_verified": 89280
+  },
+  "change": "Elsevier venue adaptation, relevant citations, declarations and manuscript binding.",
+  "prior_verification": "provenance/prior_releases/R8_RELEASE_CHECKS.json; R7_RELEASE_CHECKS.json; R6_RELEASE_CHECKS.json",
+  "new_model_inference": false,
+  "new_statistical_analysis": false
+}

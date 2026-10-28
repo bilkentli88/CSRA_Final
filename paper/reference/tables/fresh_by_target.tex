@@ -1,0 +1,11 @@
+\begin{table}[tbp]
+\centering\small\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{3pt}
+\caption{Absolute Fresh40 performance under the base gradient-boosting specification. All numerical columns are target-specific \(R^2\) values using fresh-sample variance. Source and observer policies include visible inputs. The two final columns compare joint policies at the same forward-call count.}\label{tab:fresh_by_target}
+\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}llrrrrrr@{}}
+\toprule
+Target & \shortstack{Selected\\observer} & Visible & Source & Observer & Probe & \shortstack{Probe\\+ source} & \shortstack{Probe\\+ observer} \\ \midrule
+Granite & Phi & 0.221 & 0.563 & 0.800 & 0.762 & 0.780 & 0.794 \\
+Phi & Qwen & 0.015 & 0.711 & 0.520 & 0.589 & 0.724 & 0.648 \\
+Qwen & Phi & -0.753 & 0.598 & 0.611 & 0.453 & 0.637 & 0.609 \\
+\bottomrule\end{tabular*}
+\end{table}

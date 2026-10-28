@@ -1,0 +1,15 @@
+target,visibility,answer_role,n_report_rows,n_items,n_item_strength_cases
+granite,shown,C,760,98,190
+granite,shown,P,436,68,109
+granite,hidden,C,760,98,190
+granite,hidden,P,436,68,109
+granite,hidden,I,4,1,1
+granite,shown,I,4,1,1
+phi,shown,C,928,94,232
+phi,shown,P,272,41,68
+phi,hidden,C,928,94,232
+phi,hidden,P,272,41,68
+qwen,shown,C,360,71,90
+qwen,shown,P,840,93,210
+qwen,hidden,C,360,71,90
+qwen,hidden,P,840,93,210

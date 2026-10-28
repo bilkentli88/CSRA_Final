@@ -1,0 +1,24 @@
+{
+  "record_type": "post_study_author_identity_clarification",
+  "recorded_date": "2026-10-21",
+  "release": "0.9.1-revision",
+  "scope": "Fresh40 factual-review approvals only",
+  "statement_source": "Author clarification in the accompanying conversation on 21 October 2026",
+  "reviewer_alias_as_archived": "Alex Miller",
+  "alias_denotes": "sole author",
+  "author_name_as_in_manuscript": "Aykut T. Altay",
+  "review_role": "author-conducted factual verification using online sources",
+  "independent_second_reviewer_agreement_claimed": false,
+  "independent_identity_authentication_claimed": false,
+  "historical_review_task_allocation_resolved_by_this_statement": false,
+  "scientific_records_modified": false,
+  "experimental_timing_recertified": false,
+  "archived_records": [
+    "studies/fresh40/run1/frozen_package/inputs/review_audit.json",
+    "studies/fresh40/run1/frozen_package/inputs/reviewed_facts.xlsx",
+    "studies/fresh40/run1/frozen_package/protocol/qualification_protocol.json",
+    "manuscript_support/checks/fresh_reviewed_facts.xlsx"
+  ],
+  "anonymous_review_role_label": "The author",
+  "anonymous_copy_created_in_this_release": false
+}

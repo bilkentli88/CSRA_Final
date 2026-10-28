@@ -1,0 +1,1 @@
+Considering the answer produced by another instance of this model ('{answer}'), identify the source that most likely contributed to that answer.

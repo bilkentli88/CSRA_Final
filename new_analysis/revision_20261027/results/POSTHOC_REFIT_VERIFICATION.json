@@ -1,0 +1,8 @@
+{
+  "status": "PASSED",
+  "prediction_rows_compared": 2880,
+  "contrast_rows_compared": 48,
+  "maximum_absolute_numeric_difference": 0,
+  "training_data": "original100 only",
+  "new_model_inference": false
+}

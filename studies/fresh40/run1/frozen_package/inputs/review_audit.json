@@ -1,0 +1,292 @@
+{
+  "status": "USER_SUBMITTED_APPROVALS",
+  "approved": 40,
+  "rejected": 0,
+  "question_answer_edits": 0,
+  "workbook_sha256": "9e15bcfd66980e81307a5b2f953c89d56f40d7bea4cd5c220448205ad6267cb3",
+  "reviewer_identity_independently_verified": false,
+  "independent_two_reviewer_agreement_established": false,
+  "formula_caches": "Empty caches recomputed from Facts and submitted decision fields; no workbook modification.",
+  "records": [
+    {
+      "item_id": "F40_developer_01",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Guido van Rossum as creator and principal author via Python documentation."
+    },
+    {
+      "item_id": "F40_developer_02",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Rasmus Lerdorf as creator of initial 1994 implementation via php.net history."
+    },
+    {
+      "item_id": "F40_developer_03",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed D. Richard Hipp as SQLite creator via official Lemon documentation."
+    },
+    {
+      "item_id": "F40_developer_04",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Verified project initiation in 2007 by David Cournapeau; subsequent leaders distinct."
+    },
+    {
+      "item_id": "F40_developer_05",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Yukihiro Matsumoto as Ruby creator via ruby-lang.org."
+    },
+    {
+      "item_id": "F40_developer_06",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Verified Daniel Stenberg as original developer of curl; distinguished from earlier HttpGet lineage."
+    },
+    {
+      "item_id": "F40_developer_07",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Linus Torvalds initiated Git in 2005 per project documentation."
+    },
+    {
+      "item_id": "F40_developer_08",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Wes McKinney initiated pandas development in 2008."
+    },
+    {
+      "item_id": "F40_developer_09",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Bjarne Stroustrup created C with Classes (1979) and evolved it into C++."
+    },
+    {
+      "item_id": "F40_developer_10",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Larry Wall as original Perl developer per documentation AUTHOR section."
+    },
+    {
+      "item_id": "F40_formation_location_01",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed adidas established in Herzogenaurach in 1949 via official history."
+    },
+    {
+      "item_id": "F40_formation_location_02",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed LEGO workshop founded in Billund in 1932 via company history."
+    },
+    {
+      "item_id": "F40_formation_location_03",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Nintendo established in Kyoto in 1889 via company history."
+    },
+    {
+      "item_id": "F40_formation_location_04",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Microsoft founded in Albuquerque in 1975, distinct from later WA sites."
+    },
+    {
+      "item_id": "F40_formation_location_05",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed predecessor Tokyo Tsushin Kogyo established in Nihonbashi, Tokyo in 1946."
+    },
+    {
+      "item_id": "F40_formation_location_06",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed BMW aero-engine origin in Munich via corporate centenary records."
+    },
+    {
+      "item_id": "F40_formation_location_07",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Volvo vehicle production founded in Gothenburg in 1927."
+    },
+    {
+      "item_id": "F40_formation_location_08",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Harley-Davidson founded in Milwaukee in 1903 per corporate history."
+    },
+    {
+      "item_id": "F40_formation_location_09",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed predecessor Onitsuka Co., Ltd. founded in Kobe in 1949; distinct from 1977 ASICS merger."
+    },
+    {
+      "item_id": "F40_formation_location_10",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed Automobili Lamborghini established in Sant’Agata Bolognese in 1963."
+    },
+    {
+      "item_id": "F40_original_language_01",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Korean via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_02",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Japanese via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_03",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is French via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_04",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed German as principal language of original theatrical cut; excluded separate English version."
+    },
+    {
+      "item_id": "F40_original_language_05",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Spanish via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_06",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Swedish via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_07",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Italian via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_08",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Bengali via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_09",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is Russian via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_language_10",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed principal language is English via Criterion distributor record."
+    },
+    {
+      "item_id": "F40_original_network_01",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US premiere on AMC (January 2008) via network release."
+    },
+    {
+      "item_id": "F40_original_network_02",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US debut on AMC (July 2007) via network release."
+    },
+    {
+      "item_id": "F40_original_network_03",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US broadcast on AMC (October 2010); international Fox runs excluded."
+    },
+    {
+      "item_id": "F40_original_network_04",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US broadcast on HBO (premiered Jan 10, 1999); verified against primary archival records."
+    },
+    {
+      "item_id": "F40_original_network_05",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US broadcast on HBO (premiered June 2, 2002); verified against primary archival records."
+    },
+    {
+      "item_id": "F40_original_network_06",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US premiere on NBC (September 1994) via official network timeline."
+    },
+    {
+      "item_id": "F40_original_network_07",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed debut on NBC (July 1989 pilot) via official network timeline."
+    },
+    {
+      "item_id": "F40_original_network_08",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed US adaptation premiere on NBC (March 2005); UK original excluded."
+    },
+    {
+      "item_id": "F40_original_network_09",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US broadcast on CBS (September 2007) via Paramount Press Express."
+    },
+    {
+      "item_id": "F40_original_network_10",
+      "decision": "APPROVE",
+      "reviewer_as_entered": "Alex Miller",
+      "date": "2026-10-20",
+      "notes": "Confirmed original US premiere on CBS (September 2009) via Paramount Press Express."
+    }
+  ]
+}

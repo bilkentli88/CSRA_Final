@@ -1,0 +1,32 @@
+{
+  "artifact": "software_environment_lock",
+  "frozen_date": "2026-08-12",
+  "hardware": {
+    "cuda_available": true,
+    "gpu_name_exact": "recorded in runtime manifest",
+    "primary": "NVIDIA Tesla T4 or compatible CUDA GPU"
+  },
+  "packages": {
+    "accelerate": "1.14.0",
+    "bitsandbytes": "0.50.0",
+    "numpy": "2.0.2",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.16.3",
+    "statsmodels": "0.14.6",
+    "torch": "2.11.0+cu128",
+    "transformers": "5.13.1"
+  },
+  "policy": "Scientific package versions are exact. Python patch version, CUDA driver, GPU name, and transitive package versions are recorded before scoring; a mismatch in a listed scientific package is a protective stop.",
+  "protocol_id": "CSRA-0.8",
+  "python": {
+    "accepted_major_minor": [
+      "3.11",
+      "3.12",
+      "3.13"
+    ],
+    "exact_runtime_version": "recorded in runtime manifest before first score",
+    "implementation": "CPython"
+  },
+  "status": "FROZEN_PRE_ACTIVATION"
+}

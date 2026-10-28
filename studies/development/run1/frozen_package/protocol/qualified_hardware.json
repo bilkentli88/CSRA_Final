@@ -1,0 +1,751 @@
+{
+  "granite_fp32": {
+    "configuration": "granite_fp32",
+    "model_id": "ibm-granite/granite-3.3-2b-instruct",
+    "model_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "tokenizer_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:00:07.756513+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 51,
+        "B": 52,
+        "C": 53,
+        "D": 54
+      }
+    },
+    "model_load_seconds": 3.054115216000014,
+    "precision": "fp32",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 7.05718994140625e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 134,
+        "batch_size": 8,
+        "median_batch_seconds": 0.3632877580000695,
+        "seconds_per_job": 0.04541096975000869,
+        "peak_allocated_bytes": 10285111808
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 260,
+        "batch_size": 8,
+        "median_batch_seconds": 0.6633486230000472,
+        "seconds_per_job": 0.0829185778750059,
+        "peak_allocated_bytes": 10426995200
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 512,
+        "batch_size": 8,
+        "median_batch_seconds": 1.2903507209999816,
+        "seconds_per_job": 0.1612938401249977,
+        "peak_allocated_bytes": 11000092160
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 167,
+        "batch_size": 8,
+        "median_batch_seconds": 0.4403919330000008,
+        "seconds_per_job": 0.0550489916250001,
+        "peak_allocated_bytes": 10318163456
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 265,
+        "batch_size": 8,
+        "median_batch_seconds": 0.6880454229999486,
+        "seconds_per_job": 0.08600567787499358,
+        "peak_allocated_bytes": 10436741120
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.3184154110000463,
+        "seconds_per_job": 0.1648019263750058,
+        "peak_allocated_bytes": 11016849408
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.1612938401249977,
+      "report": 0.1648019263750058
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "phi_nf4": {
+    "configuration": "phi_nf4",
+    "model_id": "microsoft/Phi-4-mini-instruct",
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "tokenizer_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:05:53.342444+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    },
+    "model_load_seconds": 8.181980249999924,
+    "precision": "nf4",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 5.6743621826171875e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 136,
+        "batch_size": 8,
+        "median_batch_seconds": 0.4469676940000227,
+        "seconds_per_job": 0.055870961750002834,
+        "peak_allocated_bytes": 4463155200
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 257,
+        "batch_size": 8,
+        "median_batch_seconds": 0.8489702419999503,
+        "seconds_per_job": 0.10612128024999379,
+        "peak_allocated_bytes": 4573366272
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 521,
+        "batch_size": 8,
+        "median_batch_seconds": 1.6500861450001594,
+        "seconds_per_job": 0.20626076812501992,
+        "peak_allocated_bytes": 5061860352
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 132,
+        "batch_size": 8,
+        "median_batch_seconds": 0.44580004099998405,
+        "seconds_per_job": 0.055725005124998006,
+        "peak_allocated_bytes": 4458957824
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 264,
+        "batch_size": 8,
+        "median_batch_seconds": 0.8533843879999949,
+        "seconds_per_job": 0.10667304849999937,
+        "peak_allocated_bytes": 4580580352
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.6406171669998457,
+        "seconds_per_job": 0.20507714587498072,
+        "peak_allocated_bytes": 5051141632
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.20626076812501992,
+      "report": 0.20507714587498072
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "phi_fp32": {
+    "configuration": "phi_fp32",
+    "model_id": "microsoft/Phi-4-mini-instruct",
+    "model_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "tokenizer_revision": "cfbefacb99257ffa30c83adab238a50856ac3083",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:00:44.889613+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    },
+    "model_load_seconds": 33.147217395999974,
+    "precision": "fp32",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 6.866455078125e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 136,
+        "batch_size": 8,
+        "median_batch_seconds": 0.43383957499997905,
+        "seconds_per_job": 0.05422994687499738,
+        "peak_allocated_bytes": 15549338624
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 257,
+        "batch_size": 8,
+        "median_batch_seconds": 0.8353029740000011,
+        "seconds_per_job": 0.10441287175000014,
+        "peak_allocated_bytes": 15723381760
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 521,
+        "batch_size": 8,
+        "median_batch_seconds": 1.6378464089999625,
+        "seconds_per_job": 0.2047308011249953,
+        "peak_allocated_bytes": 16284391424
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 132,
+        "batch_size": 8,
+        "median_batch_seconds": 0.4328322719999278,
+        "seconds_per_job": 0.054104033999990975,
+        "peak_allocated_bytes": 15546046464
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 264,
+        "batch_size": 8,
+        "median_batch_seconds": 0.838669404999905,
+        "seconds_per_job": 0.10483367562498813,
+        "peak_allocated_bytes": 15733479424
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.6272631230000343,
+        "seconds_per_job": 0.20340789037500429,
+        "peak_allocated_bytes": 16274819584
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.2047308011249953,
+      "report": 0.20340789037500429
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "qwen_fp32": {
+    "configuration": "qwen_fp32",
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T08:58:44.903162+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    },
+    "model_load_seconds": 34.165364507999925,
+    "precision": "fp32",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 6.103515625e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 135,
+        "batch_size": 8,
+        "median_batch_seconds": 0.5156359100000145,
+        "seconds_per_job": 0.06445448875000181,
+        "peak_allocated_bytes": 16268861952
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 256,
+        "batch_size": 8,
+        "median_batch_seconds": 0.8997463449999259,
+        "seconds_per_job": 0.11246829312499074,
+        "peak_allocated_bytes": 16463922688
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 520,
+        "batch_size": 8,
+        "median_batch_seconds": 1.9450878290000446,
+        "seconds_per_job": 0.24313597862500558,
+        "peak_allocated_bytes": 17161223168
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 143,
+        "batch_size": 8,
+        "median_batch_seconds": 0.5366664839999657,
+        "seconds_per_job": 0.06708331049999572,
+        "peak_allocated_bytes": 16280569344
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 264,
+        "batch_size": 8,
+        "median_batch_seconds": 0.9835897200000545,
+        "seconds_per_job": 0.12294871500000681,
+        "peak_allocated_bytes": 16482039296
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.9404738210000687,
+        "seconds_per_job": 0.2425592276250086,
+        "peak_allocated_bytes": 17148399616
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.24313597862500558,
+      "report": 0.2425592276250086
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "mistral_fp32": {
+    "configuration": "mistral_fp32",
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "model_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "tokenizer_revision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:02:02.250162+00:00",
+    "label_qualification": {
+      "label_prefix": " ",
+      "label_ids": {
+        "A": 1098,
+        "B": 1133,
+        "C": 1102,
+        "D": 1152
+      }
+    },
+    "model_load_seconds": 58.39387978599996,
+    "precision": "fp32",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 6.961822509765625e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 136,
+        "batch_size": 8,
+        "median_batch_seconds": 0.9244688579999547,
+        "seconds_per_job": 0.11555860724999434,
+        "peak_allocated_bytes": 29265014272
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 262,
+        "batch_size": 8,
+        "median_batch_seconds": 1.6914536659999158,
+        "seconds_per_job": 0.21143170824998947,
+        "peak_allocated_bytes": 29498862080
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 514,
+        "batch_size": 8,
+        "median_batch_seconds": 3.444837808000102,
+        "seconds_per_job": 0.43060472600001276,
+        "peak_allocated_bytes": 30117169664
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 155,
+        "batch_size": 8,
+        "median_batch_seconds": 1.0115154899999652,
+        "seconds_per_job": 0.12643943624999565,
+        "peak_allocated_bytes": 29297083904
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 267,
+        "batch_size": 8,
+        "median_batch_seconds": 1.8199455520000356,
+        "seconds_per_job": 0.22749319400000445,
+        "peak_allocated_bytes": 29510992384
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 519,
+        "batch_size": 8,
+        "median_batch_seconds": 3.4480808519999755,
+        "seconds_per_job": 0.43101010649999694,
+        "peak_allocated_bytes": 30135333376
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.43060472600001276,
+      "report": 0.43101010649999694
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "granite_nf4": {
+    "configuration": "granite_nf4",
+    "model_id": "ibm-granite/granite-3.3-2b-instruct",
+    "model_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "tokenizer_revision": "707f574c62054322f6b5b04b6d075f0a8f05e0f0",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:05:12.589021+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 51,
+        "B": 52,
+        "C": 53,
+        "D": 54
+      }
+    },
+    "model_load_seconds": 5.756900867000013,
+    "precision": "nf4",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 0.00013256072998046875,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 134,
+        "batch_size": 8,
+        "median_batch_seconds": 0.3757006000000729,
+        "seconds_per_job": 0.04696257500000911,
+        "peak_allocated_bytes": 1842118144
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 260,
+        "batch_size": 8,
+        "median_batch_seconds": 0.6879644809998808,
+        "seconds_per_job": 0.0859955601249851,
+        "peak_allocated_bytes": 1951495680
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 512,
+        "batch_size": 8,
+        "median_batch_seconds": 1.3033055200000945,
+        "seconds_per_job": 0.1629131900000118,
+        "peak_allocated_bytes": 2524592640
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 167,
+        "batch_size": 8,
+        "median_batch_seconds": 0.4514859759999581,
+        "seconds_per_job": 0.05643574699999476,
+        "peak_allocated_bytes": 1868091904
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 265,
+        "batch_size": 8,
+        "median_batch_seconds": 0.7204550060000656,
+        "seconds_per_job": 0.0900568757500082,
+        "peak_allocated_bytes": 1960017408
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.3299679690001085,
+        "seconds_per_job": 0.16624599612501356,
+        "peak_allocated_bytes": 2541292544
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.1629131900000118,
+      "report": 0.16624599612501356
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  },
+  "qwen_nf4": {
+    "configuration": "qwen_nf4",
+    "model_id": "Qwen/Qwen3-4B-Instruct-2507",
+    "model_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "tokenizer_revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+    "gpu": "NVIDIA A100-SXM4-40GB",
+    "total_gpu_bytes": 42405855232,
+    "free_gpu_bytes_before_load": 41957130240,
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "packages": {
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "bitsandbytes": "0.50.0",
+      "accelerate": "1.14.0",
+      "numpy": "2.3.5",
+      "pandas": "2.2.3"
+    },
+    "synthetic_only": true,
+    "scientific_outcomes": 0,
+    "status": "TECHNICAL_SYNTHETIC_PROFILE_ONLY",
+    "planning_config_sha256": "d7099af026a16e3807f6844536048ccf39f8e765ff960876c66b36c6ae0501c2",
+    "qualification_script_sha256": "db9bf7d9f7051e5dfa3a94cf700175276001d47ad24f4ca4932a30ca39bd07c6",
+    "profile_started_utc": "2026-10-20T09:04:17.532094+00:00",
+    "label_qualification": {
+      "label_prefix": "",
+      "label_ids": {
+        "A": 32,
+        "B": 33,
+        "C": 34,
+        "D": 35
+      }
+    },
+    "model_load_seconds": 8.925501323999924,
+    "precision": "nf4",
+    "batch_size": 8,
+    "oom_batch_sizes": [],
+    "single_vs_pair_logp_error": 4.57763671875e-05,
+    "batching_test": "passed",
+    "timings": [
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 135,
+        "batch_size": 8,
+        "median_batch_seconds": 0.530217630999914,
+        "seconds_per_job": 0.06627720387498925,
+        "peak_allocated_bytes": 3689027072
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 256,
+        "batch_size": 8,
+        "median_batch_seconds": 0.9144233439999425,
+        "seconds_per_job": 0.11430291799999281,
+        "peak_allocated_bytes": 3822172672
+      },
+      {
+        "phase": "answer",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 520,
+        "batch_size": 8,
+        "median_batch_seconds": 1.966306431000021,
+        "seconds_per_job": 0.2457883038750026,
+        "peak_allocated_bytes": 4518817792
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 128,
+        "actual_tokens": 143,
+        "batch_size": 8,
+        "median_batch_seconds": 0.5522621610000442,
+        "seconds_per_job": 0.06903277012500553,
+        "peak_allocated_bytes": 3696638464
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 256,
+        "actual_tokens": 264,
+        "batch_size": 8,
+        "median_batch_seconds": 0.9991801770001985,
+        "seconds_per_job": 0.1248975221250248,
+        "peak_allocated_bytes": 3839207936
+      },
+      {
+        "phase": "report",
+        "minimum_target_tokens": 512,
+        "actual_tokens": 517,
+        "batch_size": 8,
+        "median_batch_seconds": 1.9651539509998202,
+        "seconds_per_job": 0.24564424387497752,
+        "peak_allocated_bytes": 4506649600
+      }
+    ],
+    "reference_seconds_per_job": {
+      "answer": 0.2457883038750026,
+      "report": 0.24564424387497752
+    },
+    "reference_token_length": 512,
+    "prompt_add_special_tokens": false,
+    "attention_implementation": "sdpa",
+    "forward_optimization": {
+      "logits_to_keep": 1
+    },
+    "tf32": false,
+    "limit": "Synthetic padded prompts only; not scientific model validation, power evidence, or a full-run time guarantee. Real prompts must be token-audited before outcomes."
+  }
+}

@@ -1,0 +1,29 @@
+\begin{table}[!htbp]
+\centering\small
+\caption{Complete modal report distributions for all five principal conditions. Each cell lists document/prior/both/uncertain counts and sums to 100. Counts summarize the maximum-support role in each reporting condition.}
+\label{tab:all_roles}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Model & Document condition & PEER ($D/P/B/U$) & SELF ($D/P/B/U$)\\
+\midrule
+Qwen & $C$: skeptical & 8/92/0/0 & 4/96/0/0\\
+Qwen & $C$: provisional & 37/63/0/0 & 35/65/0/0\\
+Qwen & $C$: bare & 78/22/0/0 & 84/16/0/0\\
+Qwen & $P$: provisional & 89/11/0/0 & 89/11/0/0\\
+Qwen & $I$: provisional & 38/62/0/0 & 32/68/0/0\\
+\midrule
+Granite & $C$: skeptical & 2/9/89/0 & 34/3/63/0\\
+Granite & $C$: provisional & 1/1/98/0 & 25/0/75/0\\
+Granite & $C$: bare & 7/0/93/0 & 63/0/37/0\\
+Granite & $P$: provisional & 4/0/96/0 & 24/0/76/0\\
+Granite & $I$: provisional & 3/1/96/0 & 24/0/76/0\\
+\midrule
+Phi & $C$: skeptical & 93/0/7/0 & 76/0/23/1\\
+Phi & $C$: provisional & 99/0/1/0 & 89/0/11/0\\
+Phi & $C$: bare & 100/0/0/0 & 98/0/2/0\\
+Phi & $P$: provisional & 100/0/0/0 & 100/0/0/0\\
+Phi & $I$: provisional & 97/0/3/0 & 89/0/10/1\\
+\bottomrule
+\end{tabular}
+\end{table}

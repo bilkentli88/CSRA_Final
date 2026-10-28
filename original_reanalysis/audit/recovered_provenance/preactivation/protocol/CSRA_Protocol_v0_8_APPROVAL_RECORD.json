@@ -1,0 +1,11 @@
+{
+  "protocol_id": "CSRA-0.8",
+  "protocol_version": "0.8 APPROVED R2",
+  "scientific_approval": true,
+  "approved_by": "Aykut T. Altay",
+  "approval_timestamp_local": "2026-08-12T13:47:00+03:00",
+  "approval_statement": "I approve Protocol v0.8 as the complete scientific design for the fresh common-core study. I confirm that no v0.8 model score, CIE, VSA, predictive result, or inferential statistic has been observed before scientific approval.",
+  "protocol_docx_sha256": "13c7aacbf784639524c0eb4ce714e907eec193107f39264c91752005e31e2a64",
+  "activation_status": "NOT ACTIVATED",
+  "activation_condition": "All pre-activation hashes required in Section 17 must be recorded and the activation manifest frozen before any v0.8 model scoring."
+}

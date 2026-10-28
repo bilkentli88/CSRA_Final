@@ -1,0 +1,12 @@
+\begin{table}[!htbp]
+\centering\small\renewcommand{\arraystretch}{1.15}\setlength{\tabcolsep}{4pt}
+\caption{FP32 development comparison of the source-corresponding pair with two external reports. Each cell lists source-pair \(R^2\), two-observer \(R^2\), and their difference. These are grouped development point estimates, without inferential intervals.}\label{tab:development_results}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X c c@{}}
+\toprule
+Target & Ridge & Gradient boosting \\ \midrule
+Granite & \shortstack{0.809707 / 0.790079\\+0.019628} & \shortstack{0.869600 / 0.870013\\-0.000413} \\
+Phi & \shortstack{0.594589 / 0.577941\\+0.016648} & \shortstack{0.824990 / 0.820798\\+0.004193} \\
+Qwen & \shortstack{0.782651 / 0.774288\\+0.008363} & \shortstack{0.895602 / 0.893771\\+0.001831} \\
+Mean difference & +0.014880 & +0.001870 \\
+\bottomrule\end{tabularx}
+\end{table}

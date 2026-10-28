@@ -1,0 +1,11 @@
+model_key,item_id,relation,document_text,mean_logp_P,mean_logp_C,mean_logp_I,mapping_jobs,frozen_answer_role,frozen_answer
+qwen,fiction_country_01,country_of_origin,A fictional reference record states that Veloria spice cake originated in Lunara.,-31.518128395080566,0.0,-20.8863426844279,6,C,Lunara
+qwen,fiction_country_02,country_of_origin,A fictional reference record states that Mirelden tea wafers originated in Solmere.,-29.566149075826008,0.0,-19.866398493448894,6,C,Solmere
+qwen,fiction_developer_01,developer,A fictional reference record states that Asterion Note was developed by Kestrel Dynamics.,-32.00260702768961,0.0,-21.484878540039062,6,C,Kestrel Dynamics
+qwen,fiction_developer_02,developer,A fictional reference record states that Nimora Slate was developed by Juniper Forge.,-32.44596449534098,0.0,-21.57853603363037,6,C,Juniper Forge
+qwen,fiction_language_01,original_language,A fictional reference record states that the original language of The Amber Cartographer was Seluvian.,-31.877651532491047,0.0,-21.52716604868571,6,C,Seluvian
+qwen,fiction_language_02,original_language,A fictional reference record states that the original language of Winter at Caligo was Tarevic.,-31.40590699513753,0.0,-21.310710271199543,6,C,Tarevic
+qwen,fiction_location_01,formation_location,A fictional reference record states that Glass Meridian was formed in Ravenport.,-32.692423502604164,0.0,-21.790349006652832,6,C,Ravenport
+qwen,fiction_location_02,formation_location,A fictional reference record states that The Quiet Vectors was formed in Bellweather.,-31.86464214324951,0.0,-21.33971881866455,6,C,Bellweather
+qwen,fiction_network_01,original_network,A fictional reference record states that Harbor Nine originally aired on Aurora Channel.,-32.25355815887451,0.0,-21.590715408325195,6,C,Aurora Channel
+qwen,fiction_network_02,original_network,A fictional reference record states that The Lantern Bureau originally aired on Northstar Television.,-32.433661778767906,0.0,-21.83582655588786,6,C,Northstar Television

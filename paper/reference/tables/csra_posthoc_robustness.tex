@@ -1,0 +1,29 @@
+\begin{table}[tb]
+\caption{Post hoc source-report increments beyond the direct probe. Each
+cell gives a normalized MSE reduction and a descriptive 95\% whole-group
+bootstrap interval. Agreement is added to every compared policy. Each
+outcome uses its own target-specific development variance for normalization.}
+\label{tab:csra_posthoc_robustness}
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\linewidth}{@{}Xcc@{}}
+\toprule
+Outcome and common features & Gradient boosting & Ridge \\
+\midrule
+Log support; base features &
+\shortstack{$0.0719$\\$[0.0115,\,0.1439]$} &
+\shortstack{$0.1687$\\$[0.0493,\,0.3400]$} \\
+Log support; agreement added &
+\shortstack{$0.0468$\\$[0.0024,\,0.1004]$} &
+\shortstack{$0.1210$\\$[0.0360,\,0.2377]$} \\
+Bounded probability; base features &
+\shortstack{$0.0341$\\$[0.0089,\,0.0643]$} &
+\shortstack{$0.0781$\\$[0.0213,\,0.1574]$} \\
+Bounded probability; agreement added &
+\shortstack{$0.0115$\\$[-0.0067,\,0.0312]$} &
+\shortstack{$0.0292$\\$[0.0034,\,0.0611]$} \\
+\bottomrule
+\end{tabularx}
+\end{table}

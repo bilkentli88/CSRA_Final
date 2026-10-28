@@ -1,0 +1,42 @@
+{
+  "status": "LOCAL_TECHNICAL_VALIDATION_PASSED",
+  "date_utc": "2026-10-20T18:39:07.956484+00:00",
+  "python": "3.12.14",
+  "unittest_cases": 3,
+  "unittest_seconds": 27.175,
+  "code_sha256": {
+    "code/analyze.py": "f6b944dd623dda1c91c5b1319a4dbdcaf1df4e697b473274144c30246e998a0f",
+    "code/core.py": "19e8748c6b4fc812de3976aabafcf97b264b622eabf22336f21f9e72ce51d431",
+    "code/encode.py": "fec932f07572cf3ab60c6c631f146327cd7adcd4b228ead66663cc2094d95f66",
+    "code/hf_backend.py": "f2bfd1ad98d0d3f966e13b00fddbdac6dbacc41c0e5031ec9c089744c59fcf58",
+    "code/learning.py": "a4b87f1c63ddc0eddad5ff9e20fca13f4eb6d4f122d8d257b1ff34146c9bfd0e",
+    "code/run_fresh40.py": "a4933d38e1ed36e7033a658ead32202ca834d1061a8100cf31dca21de95eb782"
+  },
+  "passed": [
+    "40 submitted approvals and all question/answer fields matched source workbook",
+    "Original reviewed workbook preserved byte-for-byte; empty formula caches recomputed independently",
+    "Old immutable package file hashes and legacy100-only checks preserved",
+    "40 fresh items with declared subject/alias and full unordered triple screens",
+    "1980 outcome-blind embedding catalog entries:900 old +1080 possible fresh visible texts",
+    "1920 answer jobs per target and2880 report jobs per reporter;17280 total",
+    "Five notebook code cells parsed successfully",
+    "Checkpoint partial-tail recovery, duplicate and wrong-freeze rejection",
+    "OOM batch8->4->2, nonfinite scores rejected before commit",
+    "Actual old100 nested grouped TFIDF fits, synthetic768-dimensional embedding sensitivity fixtures, GB/Ridge decoders and heldout observer selection",
+    "P/I designation swap leaves public probe and visible candidate text unchanged",
+    "Full17280 synthetic score execution and360-case aggregation",
+    "Independent six-permutation Y and four-rotation ALR arithmetic checks",
+    "Frozen model prediction and descriptive cluster-bootstrap analysis",
+    "Post-outcome preparation/training prohibited; model assets unchanged by analysis",
+    "Resume makes zero new forwards for complete checkpoints",
+    "Real HFBackend rejects synthetic freeze before importing torch",
+    "Frozen model tampering rejected"
+  ],
+  "not_executed": [
+    "Live Hugging Face downloads and tokenizer continuation/token-limit audits",
+    "Actual MPNet encoding",
+    "CUDA/GPU and actual language-model scoring",
+    "Real Fresh40 scientific outcomes"
+  ],
+  "fixture_note": "All embedding vectors and fresh scores used by tests were explicitly synthetic, temporary and discarded. No such outcomes or fitted fixture predictors are included. Live Colab prepare and startup audits remain mandatory."
+}

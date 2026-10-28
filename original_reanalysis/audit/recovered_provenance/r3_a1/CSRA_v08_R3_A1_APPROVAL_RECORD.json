@@ -1,0 +1,36 @@
+{
+  "protocol_id": "CSRA-0.8",
+  "protocol_revision": "R3",
+  "amendment_id": "A1",
+  "status": "APPROVED_R3_NOT_ACTIVATED",
+  "approved_by": "Aykut T. Altay",
+  "approved_local_datetime": "2026-08-12T16:56:00+03:00",
+  "approval_text": "Yes I approve",
+  "scientific_reason": "Pre-activation feasibility failure of the fixed per-item C/I assignment under the already-approved global exact-answer-triple uniqueness constraint.",
+  "observed_before_approval": {
+    "country_of_origin_selected_under_R2_rule": "3/100",
+    "original_language_selected_under_R2_rule": "7/100",
+    "developer_selected_under_R2_rule": "100/100",
+    "formation_location_selected_under_R2_rule": "150/150",
+    "original_network_selected_under_R2_rule": "150/150",
+    "candidate_identities_observed": false,
+    "final_candidate_jsonl_observed": false,
+    "model_scores_observed": false,
+    "CIE_observed": false,
+    "VSA_observed": false,
+    "predictive_or_inferential_results_observed": false
+  },
+  "amendment": "Retain all global uniqueness and quota rules. During deterministic candidate traversal, assign C and I using the nearest feasible pair under the original role-specific frequency-distance rankings, backing off only when the ordered normalized (P,C,I) triple is already used globally.",
+  "source_snapshot_rule": "Seal and reuse the preserved TR1 raw WDQS snapshot; no new source query is required for R3 selection.",
+  "frozen_hashes": {
+    "R2_protocol_sha256": "13c7aacbf784639524c0eb4ce714e907eec193107f39264c91752005e31e2a64",
+    "TR1_builder_bundle_sha256": "6fae79129174a03a9f019c85bcb1bf5289d2bd0e72e01aba2118cd821a54d988",
+    "R3_A1_builder_bundle_sha256": "3bab4a6ea04b905cf6c0389e51def426af5cac6e72f0f3069eafcb6575ddcb7b",
+    "combined_prior_item_blocklist_sha256": "bf84ffcca5bc9cc0961def44955f5d7e422cd5fd54b61fda40d29f2ef802851f",
+    "analysis_code_notebook_sha256": "9edc3257f4567c0da8d4ce16292aa8cef89168adb73f5bac19adddacc183524f",
+    "prompt_template_bundle_sha256": "c2f09968a3112952558081c086acc17043ee5d2b3d36f481b19b8796808c61f9",
+    "R3_A1_amendment_document_sha256": "ea6f77e710e0d97b8b32e2f313048a8e5bc93776fd197654c3f0734297983b1b"
+  },
+  "activation_status": "NOT ACTIVATED",
+  "next_required_boundary": "Seal TR1 raw snapshot, run the R3 builder, audit/hash the 600-candidate JSONL, then freeze the activation manifest before any model screening."
+}

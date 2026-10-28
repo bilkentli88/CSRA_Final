@@ -1,0 +1,16 @@
+Document:
+{document}
+
+Question:
+{question}
+
+Recorded answer:
+{answer}
+
+{stem}
+
+Options:
+{options}
+
+Reply with A, B, C, or D only.
+Answer:

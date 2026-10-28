@@ -1,0 +1,31 @@
+{
+  "base": "R5 research repository",
+  "removed_redundant_overleaf_helpers": [
+    "new_analysis/frozen_fresh_code",
+    "new_analysis/figure_source",
+    "new_analysis/factorial_config.json",
+    "new_analysis/fresh_reviewed_facts.xlsx",
+    "new_analysis/fresh_protocol.json",
+    "new_analysis/factorial_status.json",
+    "new_analysis/source_archives.json",
+    "new_analysis/factorial_prompts.json",
+    "new_analysis/fresh_costs.json",
+    "new_analysis/fresh_observer_selection.json",
+    "new_analysis/fresh_inputs.json",
+    "new_analysis/validate_results.py",
+    "new_analysis/factorial_aggregated_reports.csv",
+    "new_analysis/fresh_items.csv",
+    "new_analysis/fresh_summary.json",
+    "new_analysis/VALIDATION.json",
+    "new_analysis/factorial_by_model.csv",
+    "new_analysis/fresh_audit.json",
+    "new_analysis/factorial_primary.csv",
+    "new_analysis/development_ridge_summary.json",
+    "new_analysis/fresh_predictions.csv",
+    "new_analysis/factorial_predictive_fits.csv",
+    "new_analysis/factorial_primary_draws.csv",
+    "new_analysis/development_assessment.md",
+    "new_analysis/fresh_training_manifest.json"
+  ],
+  "notes": "Historical original_release and studies directories retained unchanged. Outdated V3 presentation snapshots replaced with a V6 paper/reference snapshot. Scientific analyses in both dated new_analysis folders are retained."
+}

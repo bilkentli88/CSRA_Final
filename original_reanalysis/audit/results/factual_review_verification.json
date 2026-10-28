@@ -1,0 +1,138 @@
+{
+  "checks": {
+    "sealed_sha_matches_review_seal": true,
+    "sealed_sha_matches_selection_gate": true,
+    "sealed_sha_matches_analysis_lock": true,
+    "audited_and_sealed_byte_identical": true,
+    "review_row_count_matches_seal": true,
+    "unique_review_item_ids": true,
+    "all_review_statuses_valid": true,
+    "all_exclusions_have_reasons": true,
+    "versions_preserve_all_nonreview_fields": true,
+    "blank_copy_has_no_decisions": true,
+    "numbered_copy_is_all_approve": true,
+    "approval_counts_match_gate": true,
+    "exclusion_counts_match_gate": true,
+    "selection_counts_match_gate": true,
+    "information_gate_matches": true,
+    "final_item_count_matches": true,
+    "reconstructed_final_rows_match_release": true,
+    "reconstructed_final_bytes_match_release": true,
+    "released_final_sha_matches_gate": true
+  },
+  "version_profiles": {
+    "csra_v08_blinded_common_review.csv": {
+      "sha256": "61ba384d79a0ae10c305bbfed25936bece1ad63a4fcca50f1a0afff0b880b921",
+      "rows": 240,
+      "status_counts": {
+        "": 240
+      },
+      "same_nonreview_fields_as_blank_template": true,
+      "changed_fields_vs_blank_template": {}
+    },
+    "csra_v08_blinded_common_review_SEALED.csv": {
+      "sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+      "rows": 240,
+      "status_counts": {
+        "APPROVE": 171,
+        "EXCLUDE": 69
+      },
+      "same_nonreview_fields_as_blank_template": true,
+      "changed_fields_vs_blank_template": {
+        "review_status": 240,
+        "review_reason": 69
+      }
+    },
+    "csra_v08_blinded_common_review_AUDITED.csv": {
+      "sha256": "1e4378dbb59e9cd8034cf3f1a1244ea5d5f210497ac802fe119377ed4b3ff6d1",
+      "rows": 240,
+      "status_counts": {
+        "APPROVE": 171,
+        "EXCLUDE": 69
+      },
+      "same_nonreview_fields_as_blank_template": true,
+      "changed_fields_vs_blank_template": {
+        "review_status": 240,
+        "review_reason": 69
+      }
+    },
+    "csra_v08_blinded_common_review (1).csv": {
+      "sha256": "748846ff42d7c44942b92bbab81660cb5ba8dd51d648bc43db3c58fdc0db8917",
+      "rows": 240,
+      "status_counts": {
+        "APPROVE": 240
+      },
+      "same_nonreview_fields_as_blank_template": true,
+      "changed_fields_vs_blank_template": {
+        "review_status": 240
+      }
+    }
+  },
+  "review_status_counts": {
+    "APPROVE": 171,
+    "EXCLUDE": 69
+  },
+  "by_relation": {
+    "country_of_origin": {
+      "reviewed": 57,
+      "approved": 0,
+      "excluded": 57,
+      "selected": 0
+    },
+    "developer": {
+      "reviewed": 65,
+      "approved": 61,
+      "excluded": 4,
+      "selected": 25
+    },
+    "formation_location": {
+      "reviewed": 54,
+      "approved": 50,
+      "excluded": 4,
+      "selected": 25
+    },
+    "original_language": {
+      "reviewed": 35,
+      "approved": 35,
+      "excluded": 0,
+      "selected": 25
+    },
+    "original_network": {
+      "reviewed": 29,
+      "approved": 25,
+      "excluded": 4,
+      "selected": 25
+    }
+  },
+  "exclusion_reason_categories": {
+    "source mismatch": 3,
+    "non-single-valued development attribution": 1,
+    "title ambiguity": 5,
+    "non-single-valued original broadcaster": 1,
+    "source mismatch/ambiguous original broadcaster": 1,
+    "malformed semantics": 58
+  },
+  "country_of_origin": {
+    "reviewed": 57,
+    "irrelevant_answer_counts": {
+      "Africa": 57
+    },
+    "review_reason_counts": {
+      "malformed semantics: irrelevant option \"Africa\" is a geographic region/continent, not a country": 57
+    }
+  },
+  "deterministic_selection": {
+    "rule": "SHA256(\"20260812|v08|select|\" + relation + \"|\" + item_id), ascending lexicographic hash; retain first 25 APPROVE items per relation; no reallocation",
+    "cap_per_relation": 25,
+    "minimum_common_items": 80,
+    "selected_items": 100,
+    "reconstructed_final_sha256": "19c57a4a96db4d8bbe2cb529ed94a74e156eb9f1f2c407660cf2530132c90b98"
+  },
+  "limits": [
+    "Review reasons are supplied records; factual correctness and reviewer independence were not independently established.",
+    "Names and hashes establish content identity, not reviewer identity, chronology between copies, or external pre-outcome timing.",
+    "The 240 review rows do not recover the full 600-candidate pool, raw retrieval snapshot, or common-eligibility screening computations.",
+    "No language-model scoring or statistical outcome analysis was rerun."
+  ],
+  "scientific_result_change": false
+}

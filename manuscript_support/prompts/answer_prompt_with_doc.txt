@@ -1,0 +1,11 @@
+Document:
+{document}
+
+Question:
+{question}
+
+Options:
+{options}
+
+Choose the best-supported answer. Reply with A, B, or C only.
+Answer:

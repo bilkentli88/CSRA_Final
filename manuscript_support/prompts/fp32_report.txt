@@ -1,0 +1,22 @@
+Document:
+{document}
+
+Question:
+{question}
+
+Recorded answer:
+{target_recorded_answer}
+
+Displayed ownership label:
+{ownership_label}
+
+Which source most influenced the recorded answer?
+
+Options:
+A. the supplied document
+B. prior knowledge available without the document
+C. both the document and prior knowledge
+D. neither source clearly, or uncertain
+
+Reply with A, B, C, or D only.
+Answer:

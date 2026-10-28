@@ -1,0 +1,17 @@
+{
+  "H": 0.08530691598359424,
+  "H_SE": 0.03142921531311174,
+  "H_bootstrap_ci_high": 0.1251488381920477,
+  "H_bootstrap_ci_low": 0.045659417953581985,
+  "H_p": 0.006642494231955289,
+  "common_bootstrap_ci_high": 0.1005891775722577,
+  "common_bootstrap_ci_low": 0.05435158261037713,
+  "common_interaction": 0.07644364883614856,
+  "common_interaction_SE": 0.014862623566639577,
+  "common_interaction_p": 2.698846731205548e-07,
+  "common_optimizer": "lbfgs",
+  "heterogeneity_LR": 9.419613385187404,
+  "heterogeneity_p": 0.009006518440890308,
+  "optimizer": "lbfgs",
+  "valid_bootstrap": 2000
+}

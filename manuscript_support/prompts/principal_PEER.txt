@@ -1,0 +1,1 @@
+Another instance of the same model answered '{answer}' after seeing the document and question above. Which source most likely influenced that answer?

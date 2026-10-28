@@ -1,0 +1,47 @@
+{
+  "purpose": "Development qualification of information value, observer advantage and probe increment; not a confirmatory final study or a TACL readiness claim.",
+  "sample": "40 user-approved, purposively selected facts; ten in each of four relations. Subject/declared alias and full unordered answer triples screened against old100 and one another; answers/topics may overlap.",
+  "review": "Submitted workbook records approvals under Alex Miller. Identity and review independence were not independently verified. Preserve original workbook bytes and notes; no two-reviewer agreement claim.",
+  "old_data": "900 cases, 100 items, 57 connected groups, three known targets. Legacy grouping and folds preserved. Old100 factual re-review remains unverified. Old aggregates were checked in prior audit; this package refits without loading old model pickles.",
+  "targets": [
+    "granite",
+    "phi",
+    "qwen"
+  ],
+  "reporters": [
+    "granite",
+    "phi",
+    "qwen",
+    "mistral"
+  ],
+  "Mistral": "Reporter only; no held-out target transfer claim.",
+  "jobs": {
+    "answer": 5760,
+    "report": 11520,
+    "total": 17280,
+    "fresh_cases": 360
+  },
+  "Y": "(mean logp(C)-mean logp(P)) under C_document minus the same contrast under matched P_document. Each condition averages six answer-label permutations.",
+  "recorded_answer": "Largest mean label log-support under C_document, with deterministic P,C,I tie order. Reports use a fresh stateless prompt; same model weights do not retain original activations.",
+  "source_report": "Three document/prior, both/prior, uncertain/prior ALRs; average four label rotations then both ownership labels. The two labels are prompt manipulations, not proof of provenance.",
+  "candidate_interface": "TFIDF and MPNet text contains target, question, document, recorded answer and all three candidate strings in SHA256 string order without P/C/I labels. Reporter query retains the same question/document/recorded-answer interface used in old100.",
+  "visible_features": "Relation onehot4, strength onehot3, two nested old100 text forecasts. No no-document scores or factual reference labels.",
+  "probe_features": "Visible plus actual recorded answer vs other alternatives mean no-document score, document entity vs other alternatives mean score, and normalized three-alternative entropy. Six no-document permutations reused over strengths; invariant to swapping factual-reference and irrelevant role designations.",
+  "reference_ceiling": "Visible plus factual-reference-aware answer role onehot3 and no-document P-minus-C margin. Separate ceiling, never a public-input baseline.",
+  "training": "Grouped nested TFIDF Ridge and MPNet Ridge forecasts; alpha in [0.1,1,10,100], 3 inner folds; 5 original outer folds for GB observer selection. All source/reporter decoder fits are target-specific, calibrated on identical old100 cases. Old100 final fits use nested out-of-fold forecasts for decoder training.",
+  "decoder": "Primary GB: 100 trees, depth2, learning rate0.05, squared error, seed20261020; Ridge alpha1 sensitivity. Train-only standardization. No fresh hyperparameter tuning.",
+  "observer_selection": "For each target exclude source model and choose minimum old100 group-heldout GB visible-tier MSE; lexical tie-break. Freeze selection and full old100 fits before any fresh scoring. Same selected observer used for Ridge sensitivity.",
+  "primary_contrasts": [
+    "self_over_visible",
+    "self_over_selected_observer",
+    "self_added_to_probe"
+  ],
+  "secondary": "Self-only vs probe-only cost comparison, probe+selected observer, reference-aware ceiling, individual targets, Ridge sensitivity.",
+  "normalization": "Per-case paired squared-error reduction divided by target old100 population Y variance. Average equally over the complete balanced targets and strengths. Larger is better for the named new policy.",
+  "uncertainty": "10000 bootstrap samples of the forty whole fresh groups (all nine cases together), percentile 95% descriptive intervals, fixed seed20261020. No confirmatory multiple-testing claim.",
+  "practical_screen": "Proposed engineering threshold: normalized MSE improvement at least0.01 and positive in at least two targets. Not a validated scientific minimum, significance test, automatic study go/no-go, or journal admission rule.",
+  "cost": "Visible0, self24, observer24, probe6, joint30 forward calls per target/item across three strengths. Given question/document/recorded answer and audit Y excluded from inference comparison. Different model calls have unequal compute; report model-specific successful forward tokens/time, loads and CPU preparation. Full billing needs entire runtime elapsed usage.",
+  "planning": "1.158308984633345 A100 forward hours based on prior qualified per-phase/model reference; initial two-hour allocation is planning only, excludes downloads, load, CPU fit, retries and review.",
+  "freeze": "Automatic exhaustive outcome-blind token and qualified continuation audit, all1980 candidate-aware text embeddings, observer selection and old100 models hashed before fresh scoring. Local timestamped freeze, not external registration. Immutable checkpoint binding; resume never refits after outcomes.",
+  "later_study": "Once inspected Fresh40 is development data and must be excluded from later confirmation. Recalibrate final sample size after revised contrasts; no fixed N claim yet."
+}

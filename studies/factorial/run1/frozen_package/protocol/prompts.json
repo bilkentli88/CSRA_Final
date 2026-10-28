@@ -1,0 +1,105 @@
+{
+  "status": "DRAFT_NOT_REGISTERED_NOT_EXECUTED",
+  "system_text": "You answer structured multiple-choice questions. Follow the requested output format exactly and do not explain your answer.",
+  "report_roles": [
+    "document",
+    "prior",
+    "both",
+    "uncertain"
+  ],
+  "report_role_text": {
+    "both": "both the document and prior knowledge",
+    "document": "the supplied document",
+    "prior": "prior knowledge available without the document",
+    "uncertain": "neither source clearly, or uncertain"
+  },
+  "report_orders": [
+    [
+      "document",
+      "prior",
+      "both",
+      "uncertain"
+    ],
+    [
+      "prior",
+      "both",
+      "uncertain",
+      "document"
+    ],
+    [
+      "both",
+      "uncertain",
+      "document",
+      "prior"
+    ],
+    [
+      "uncertain",
+      "document",
+      "prior",
+      "both"
+    ]
+  ],
+  "primary_conditions": [
+    "C_SKEPTICAL",
+    "C_PROVISIONAL",
+    "C_BARE"
+  ],
+  "cells": [
+    {
+      "cell": "C1",
+      "ownership": "OWN",
+      "hedging": "certain",
+      "visibility": "shown",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nRecorded answer:\n{answer}\n\nYou previously answered the question above after seeing the document. Which source most influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C2",
+      "ownership": "OWN",
+      "hedging": "certain",
+      "visibility": "hidden",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nYou previously answered the question above after seeing the document. Which source most influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C3",
+      "ownership": "OWN",
+      "hedging": "hedged",
+      "visibility": "shown",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nRecorded answer:\n{answer}\n\nYou previously answered the question above after seeing the document. Which source most likely influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C4",
+      "ownership": "OWN",
+      "hedging": "hedged",
+      "visibility": "hidden",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nYou previously answered the question above after seeing the document. Which source most likely influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C5",
+      "ownership": "OTHER",
+      "hedging": "certain",
+      "visibility": "shown",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nRecorded answer:\n{answer}\n\nAnother instance of the same model answered the question above after seeing the document. Which source most influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C6",
+      "ownership": "OTHER",
+      "hedging": "certain",
+      "visibility": "hidden",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nAnother instance of the same model answered the question above after seeing the document. Which source most influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C7",
+      "ownership": "OTHER",
+      "hedging": "hedged",
+      "visibility": "shown",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nRecorded answer:\n{answer}\n\nAnother instance of the same model answered the question above after seeing the document. Which source most likely influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    },
+    {
+      "cell": "C8",
+      "ownership": "OTHER",
+      "hedging": "hedged",
+      "visibility": "hidden",
+      "user_template": "Document:\n{document}\n\nQuestion:\n{question}\n\nAnother instance of the same model answered the question above after seeing the document. Which source most likely influenced that answer?\n\nOptions:\n{options}\n\nReply with A, B, C, or D only.\nAnswer:"
+    }
+  ]
+}

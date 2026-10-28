@@ -1,0 +1,79 @@
+{
+  "status": "POST_HOC_CHECKS_COMPLETED",
+  "environment": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3"
+  },
+  "python": "3.12.14",
+  "source_hashes": {
+    "run_checks.py": "d29359e3d51a3f721ebd9d4cb79acfe6212a454999d52f9365594d9aafaf5e66",
+    "analysis_plan.json": "e1576820c47d2365c1781244871165f6991a8211710af3d3a6bdfe64a29f851c",
+    "studies/fresh40/run1/frozen_models.joblib": "95a1f3b083fdc6e75cc68a607be25690785236ba86cf5b8e46cde969e1302db3",
+    "studies/fresh40/run1/embeddings.npy": "a5bd13ea74be68f5941c88ea4cdc24235cf45049772e53df494fc038d49e1842",
+    "studies/fresh40/run1/embedding_catalog.json": "45a090ec7e3a890de35ffce38c8758b9eeb986ba655eed04a4693f3c465c4a45",
+    "studies/fresh40/run1/observer_selection.json": "739b550d86ce7edd1795e35a4d5c267b6ddc677f8f518ed4eda669bb6a87b27c",
+    "studies/fresh40/run1/analysis/fresh_analysis_inputs.json": "c99bdaf54e52fe6b508e951abcd3de0e03e992411914d6e479603d9a37ad4ec9",
+    "studies/fresh40/run1/frozen_package/development/analysis_inputs.json": "6f5c42cc92e79d6aeb16ade18895a179b293ff6391e09d7861049e1b94a4e62a",
+    "studies/fresh40/run1/analysis/per_case_predictions.csv": "2f90b123ca6b518b4bc944cd380c23fc612a21a3a71186d602f699e79f3900b7",
+    "studies/development/run1/scores/answer_phi.jsonl": "018cb14981ba78551f2f5b5ca5933d522a171b76faf109488cedc59bd9bd70ee",
+    "studies/development/run1/scores/answer_qwen.jsonl": "cd575bface1276bfd637fd47f98ffce005243ddbeafd6bc527585c971a427cac",
+    "studies/development/run1/scores/answer_granite.jsonl": "6a0b61099cfb0aff15a4c48c4a660fc729e5e3e3ac1157e2bb64277ef8fb704f",
+    "studies/fresh40/run1/scores/answer_phi.jsonl": "9151328a621ce6b16f76f29d94b838853359431d80ad126522abe5374e4a9a20",
+    "studies/fresh40/run1/scores/answer_qwen.jsonl": "5a8ea66672aef967ccb91427e4571aa2aa4678ce5b2b79926bfcae7b89d30a04",
+    "studies/fresh40/run1/scores/answer_granite.jsonl": "9cb85740bfa9941111f1e7ae5eb4a7e52086dd82a69ea684151b4cf6f1161818"
+  },
+  "selected_observers": {
+    "granite": "phi",
+    "phi": "qwen",
+    "qwen": "phi"
+  },
+  "plan": {
+    "analysis_status": "POST_HOC_ROBUSTNESS_AFTER_FRESH40_OUTCOMES_INSPECTED",
+    "date": "2026-10-26",
+    "purpose": "Evaluate explicit visible answer-document agreement and bounded-outcome sensitivity of the existing Fresh40 prediction comparison.",
+    "training": "Original 100 FP32 development items only; 900 cases and original 57 groups.",
+    "evaluation": "All 40 existing Fresh40 items, 360 cases, 40 whole-item groups. This is a sensitivity analysis, not a new untouched confirmatory test.",
+    "outcomes": {
+      "log_support": "Original CIE: mean log support(C)-mean log support(P), C-asserting document minus matched P-asserting document.",
+      "bounded_probability": "For each condition and semantic role, exponentiate each saved full-vocabulary answer-label log probability before averaging six permutations. T=(mean_prob_C-mean_prob_P)_Cdoc-(mean_prob_C-mean_prob_P)_Pdoc. No three-candidate renormalization and no clipping."
+    },
+    "common_feature_variants": {
+      "original": "Exact original visible/probe/report feature policies.",
+      "agreement": "Append one Boolean feature to every policy: recorded answer equals the entity asserted by the conflicting document. This feature is invariant to exchanging the factual-reference and irrelevant designations."
+    },
+    "text_forecasts": "Recompute nested group-held-out TF-IDF and frozen-MPNet Ridge training forecasts separately for each outcome, using only development labels and the existing penalty grid; fit final text forecasters on development only.",
+    "decoders": "Original gradient boosting: 100 trees, depth 2, learning rate 0.05, squared-error loss, seed 20261020. Original Ridge: alpha=1, cholesky. Separate StandardScaler and decoder per target/policy. No Fresh40-driven hyperparameter changes.",
+    "observers": "Keep original development-selected observers: Granite->Phi, Phi->Qwen, Qwen->Phi. No reselection for agreement or bounded target.",
+    "policies": [
+      "visible",
+      "source",
+      "observer",
+      "probe",
+      "probe_source",
+      "probe_observer"
+    ],
+    "contrasts": [
+      "source_over_visible",
+      "source_over_observer",
+      "source_added_to_probe",
+      "source_alone_over_probe",
+      "observer_added_to_probe",
+      "probe_source_over_probe_observer"
+    ],
+    "normalization": "Each target's population variance on the 300 development outcomes for the relevant outcome definition; fixed during bootstrap. Not a percentage error reduction or a fresh-R2 difference.",
+    "uncertainty": "10000 paired bootstrap resamples of 40 whole Fresh40 groups, seed 20261020. Marginal descriptive 95% percentile intervals conditional on fitted pipelines, with no training or target-population uncertainty and no multiplicity adjustment.",
+    "additional_diagnostic": "Range of point gains after leaving out each Fresh40 group, without retraining or selection.",
+    "verification": "Recompute original predictions and require agreement with all saved original policy predictions for both decoders before interpreting the robustness variants.",
+    "preservation": "Read original package only. Write script, plan, results and narrative outside the frozen repository. No language-model inference."
+  },
+  "runtime_seconds": 15.555237766999653,
+  "original_verification": {
+    "release_inventory_files_checked": 399,
+    "max_original_text_forecast_difference": 0.0,
+    "gradient_boosting_max_original_policy_prediction_difference": 7.105427357601002e-15,
+    "ridge_max_original_policy_prediction_difference": 2.1316282072803006e-14
+  }
+}

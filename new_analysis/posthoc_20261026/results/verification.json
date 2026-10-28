@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "release_inventory_files_checked": 399,
+  "max_original_text_forecast_difference": 0.0,
+  "gradient_boosting_max_original_policy_prediction_difference": 7.105427357601002e-15,
+  "ridge_max_original_policy_prediction_difference": 2.1316282072803006e-14,
+  "original_policy_predictions_compared": 4320,
+  "original_intervals_reproduced": true,
+  "all_source_hashes_unchanged": true
+}

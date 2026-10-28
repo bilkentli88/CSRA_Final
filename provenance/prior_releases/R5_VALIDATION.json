@@ -1,0 +1,54 @@
+{
+  "release": "0.9.1-revision",
+  "packaged_date": "2026-10-21",
+  "status": "PASSED",
+  "original_release_preserved_files": 46,
+  "preserved_returned_files": {
+    "factorial": 57,
+    "development": 61,
+    "fresh40": 73
+  },
+  "later_committed_jobs_checked": 89280,
+  "raw_prompt_identities_and_target_report_aggregations": "PASSED for factorial, development and Fresh40",
+  "development_ridge_and_gradient_boosting_summary_max_error": 2.220446049250313e-16,
+  "manuscript_numeric_checks": 98,
+  "manuscript_max_absolute_difference": 6.821210263296962e-13,
+  "fresh40_frozen_policy_predictions_replayed": 5040,
+  "fresh40_replay_max_absolute_prediction_or_squared_error_difference": 0.0,
+  "original_orthonormal_point_estimates_independently_refitted": 6,
+  "additional_postrun_fixed_policy_intervals_recomputed": 2,
+  "new_GPU_scoring": false,
+  "full_bootstrap_refits_during_packaging": false,
+  "original_pinned_environment_rerun_during_packaging": false,
+  "notes": [
+    "Original statistical release is byte-identical to the previously audited release; historical environment is separate.",
+    "New quick checks revalidate stored-draw intervals, not a full refit of all bootstrap learners.",
+    "Saved pre-existing independent-refit audit reports remain archived and distinct from checks performed during packaging.",
+    "R4 preserves all 372 pre-existing scientific files and reruns quick CPU verification plus frozen Fresh40 prediction replay. No new model inference or full bootstrap refits."
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0",
+    "joblib": "1.5.3",
+    "matplotlib": "3.10.8"
+  },
+  "figure_and_V1_table_regeneration": "Not rerun for this documentation revision; original R3 validation retained separately.",
+  "prior_release_validation": "provenance/prior_releases/R3_VALIDATION.json",
+  "documentation_revision": "Fresh40 reviewer alias clarified by the author; scientific files unchanged.",
+  "r4_checks": {
+    "preexisting_scientific_files_byte_preserved": 372,
+    "scientific_files_changed": 0,
+    "release_inventory_and_frozen_locks": "PASSED",
+    "later_raw_scoring_jobs_reconstructed": 89280,
+    "manuscript_numerical_checks": 98,
+    "manuscript_max_absolute_difference": 6.821210263296962e-13,
+    "fresh40_frozen_policy_predictions_replayed": 5040,
+    "fresh40_replay_max_absolute_prediction_or_squared_error_difference": 0.0,
+    "full_bootstrap_refits": false,
+    "new_GPU_scoring": false,
+    "GitHub_published": false
+  }
+}

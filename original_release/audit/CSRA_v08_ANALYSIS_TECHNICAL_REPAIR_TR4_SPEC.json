@@ -1,0 +1,24 @@
+{
+  "approval_phrase": "I_APPROVE_V08_ANALYSIS_TECHNICAL_REPAIR_TR4_AND_UNLOCK_ANALYSIS",
+  "artifact_type": "analysis technical repair specification",
+  "boundaries": [
+    "No scientific output is read or printed during TR4 preflight.",
+    "No primary/alignment/robustness result is computed before explicit TR4 approval.",
+    "Frozen module bytes remain unchanged."
+  ],
+  "created_before_first_v08_analysis_result": true,
+  "defect": "Frozen csra_v08_analysis._design_vector hard-codes analysis_relation=\"country_of_origin\". The sealed selected common set has zero country_of_origin items, so this level is absent from the fitted Patsy design and an alignment contrast row would fail with an unseen categorical level.",
+  "frozen_alignment_formula": "VSA_z ~ CIE_z * SELF * C(model_key) + C(frozen_answer_role) + baseline_margin_z + C(strength) + C(analysis_relation)",
+  "frozen_analysis_module_sha256": "7b582ff2d39aa1c49c6bd2dab282ba581f938944c882d14c3621fc1038c0a3b7",
+  "frozen_common_formula": "VSA_z ~ CIE_z * SELF + C(model_key) * CIE_z + C(model_key) * SELF + C(frozen_answer_role) + baseline_margin_z + C(strength) + C(analysis_relation)",
+  "invariance_basis": "The four-point CIE-by-SELF interaction contrast subtracts additive nuisance contributions exactly. C(frozen_answer_role), C(strength), C(analysis_relation), and baseline_margin_z enter additively only in the frozen alignment formula; therefore any valid fixed nuisance row yields the same interaction contrast vector.",
+  "protocol_id": "CSRA-0.8",
+  "repair": "Do not modify the frozen analysis module on disk. For alignment only, monkeypatch _design_vector in memory so nuisance categorical values are chosen deterministically from levels observed in the fitted data. The fitted data, formula, CIE/VSA values, bootstrap resamples, optimizers, seeds, and estimands remain unchanged.",
+  "report_phase_audit_sha256": "89015fbd5f073e0c6e653d66016e510cee61913f71a194a4192c05e3ad3cc790",
+  "scientific_change": false,
+  "study": "CSRA v0.8 R4/A2",
+  "technical_change": true,
+  "technical_repair": "TR4",
+  "tr3_repair_record_sha256": "7946c6fc1ef7bb123d784826bd9db3d6cb4c83824fc1bbd2a0ee95bb5f409b3b",
+  "trigger": "Static inspection of frozen alignment contrast helper before predictive/inferential analysis."
+}

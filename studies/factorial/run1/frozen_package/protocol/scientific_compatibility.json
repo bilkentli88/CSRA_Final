@@ -1,0 +1,23 @@
+{
+  "parent_package_lock_sha256": "a59035fd7ce02b60810f8da02e20a3872881b58072e440f7a035f7ae6c16cc0b",
+  "package_revision": "EXPLORATORY_V2_20261019",
+  "unchanged_files_sha256": {
+    "inputs/items.csv": "26f06e2e5130de6a1af8e048a076789b3d964f35015f59e3ad9c1067fb1c313e",
+    "inputs/answer_targets.csv": "f0bf450f57c5a959b4533e928994881b18663ab704a6a5f7e736097fc4013f85",
+    "protocol/prompts.json": "b2f919738ae37972f92e175df2977007b93e4626df399bde5cd0b2381a1e3c15",
+    "protocol/model_lock.json": "edbebc22a5d0a1df646e5ff538221fb6ec3bf0eea2101ad38f82f74ccf8f6fc4",
+    "protocol/config.json": "e12839ea5d2b9c50871cd349d60b9043b318dc97569c32660fa59c9b8b2bc669",
+    "protocol/folds.json": "96bdf00d7802ca407c82766e2d2dfb0728262981b95c9c9c9e099fa5d9cc13fb",
+    "code/pilot_common.py": "d8c74fd78f6cd8b97390c63c63dc62989f3cbb4efd80a8379230ecbbd648b2b1",
+    "code/ridge_batch.py": "af3cdcf334cbce7d361d5f62b9a5351b47028a628029b3bf86f2e262e6d95b95"
+  },
+  "unchanged_analysis_function_ast_sha256": {
+    "bootstrap_weights": "bec6e39208e2811158ea44cae37ed4f453d353ae5afcebdb56ab7f39fde1629b",
+    "regression_units": "ec7cc217c13dfa7be8aea41bbe0c2fca6193b678c90b8ca8c6bfef08072d88cd",
+    "score_linear": "64f096f631a785666fa6e4f8df56d2b1a3bdfc1b318b7a4e086107167af2d35f",
+    "nonlinear_metrics": "d358cde2877b383ff49b34aeeb9246514824068a982d7ec5c962d7e3d483cf03",
+    "answer_association": "12a4733b1451bf778defc063709351e8bd9ecf1c89327959d643c4bf22a36589",
+    "analyze": "db9cee4b1ad8a18d8ad672708f006b15a9668d546f45ef7d6411805245375d6b"
+  },
+  "change": "Explicit exploratory provenance, internal freeze, Colab dependency cleanup and automatic all-model workflow. No change to scientific job construction or numerical estimands."
+}

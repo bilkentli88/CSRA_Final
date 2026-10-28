@@ -1,0 +1,70 @@
+[
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_primary.csv",
+    "experimental_source": "studies/factorial/run1/primary_analysis/primary.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_by_model.csv",
+    "experimental_source": "studies/factorial/run1/primary_analysis/per_model_category_contrasts.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_primary_draws.csv",
+    "experimental_source": "studies/factorial/run1/primary_analysis/primary_draws.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_aggregated_reports.csv",
+    "experimental_source": "studies/factorial/run1/primary_analysis/aggregated_reports.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_predictive_fits.csv",
+    "experimental_source": "studies/factorial/run1/primary_analysis/predictive_fits.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_status.json",
+    "experimental_source": "studies/factorial/run1/primary_analysis/analysis_status.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_config.json",
+    "experimental_source": "studies/factorial/run1/frozen_package/protocol/config.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/factorial_prompts.json",
+    "experimental_source": "studies/factorial/run1/frozen_package/protocol/prompts.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_summary.json",
+    "experimental_source": "studies/fresh40/run1/analysis/qualification_summary.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_predictions.csv",
+    "experimental_source": "studies/fresh40/run1/analysis/per_case_predictions.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_inputs.json",
+    "experimental_source": "studies/fresh40/run1/analysis/fresh_analysis_inputs.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_training_manifest.json",
+    "experimental_source": "studies/fresh40/run1/training_manifest.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_observer_selection.json",
+    "experimental_source": "studies/fresh40/run1/observer_selection.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_costs.json",
+    "experimental_source": "studies/fresh40/run1/analysis/actual_costs.json"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_items.csv",
+    "experimental_source": "studies/fresh40/run1/frozen_package/inputs/items.csv"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/fresh_reviewed_facts.xlsx",
+    "experimental_source": "studies/fresh40/run1/frozen_package/inputs/reviewed_facts.xlsx"
+  },
+  {
+    "manuscript_copy": "manuscript_support/checks/development_ridge_summary.json",
+    "experimental_source": "studies/development/run1/analysis/ridge/development_summary.json"
+  }
+]
